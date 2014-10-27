@@ -1,6 +1,9 @@
 language: perl
 perl:
   - "5.20"
+env:
+  global:
+    secure: BAY6rKd7XZggvIvemwv7kv+4C7epX61aoEuh3lID9rTaou7c9KpxJinMsLpuU6KdOtMERLYAF71Mr+bZFZTQe29OIlICB+SNrwIouK0Dpm8F/qnqmPLBvMCSsmk2sDMgwc2v4TaxdhGLbw7cIkdncosTJKRdTqvvc1okph+47KA=
 install: []
 script: ./build
 branches:
