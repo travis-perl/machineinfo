@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+git remote set-branches --add origin gh-pages
+git fetch --all
+git branch --track gh-pages origin/gh-pages
 git clone --branch gh-pages $(pwd) ~/machineinfo
 
 host="$(hostname -f)"
