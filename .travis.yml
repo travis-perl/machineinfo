@@ -1,0 +1,10 @@
+language: perl
+perl:
+  - "5.20"
+install: []
+script: ./build
+branches:
+  include:
+    - master
+notifications:
+  email: false
