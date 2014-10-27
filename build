@@ -20,7 +20,7 @@ ref="$(git describe --all --long HEAD)"
   echo "## CPU Info"
   cat /proc/cpuinfo | sed -e's/^/    /'
   echo "## Services"
-  sudo service --status-all | sed -e's/^/    /'
+  sudo service --status-all 2>&1 | sed -e's/^/    /'
   echo "## Filesystem Info"
   df | sed -e's/^/    /'
 ) 2>&1 | tee ~/machineinfo/README.md
