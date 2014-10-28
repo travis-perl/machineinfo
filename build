@@ -28,6 +28,7 @@ ref="$(git describe --all --long HEAD)"
   echo ""
   echo "## Network Configuration"
   ip addr | sed -e's/^/    /'
+  echo ""
   echo "## Environment"
   env | sort | grep -v '^SSH_KEY_PASS=' | sed -e's/^/    /'
   echo ""
