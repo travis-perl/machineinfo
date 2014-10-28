@@ -42,7 +42,7 @@ ref="$(git describe --all --long HEAD)"
   sudo service --status-all 2>&1 | sed -e's/^/    /'
   echo ""
   echo "## Packages"
-  dpkg - | sed -e's/^/    /'
+  dpkg -l | sed -e's/^/    /'
 ) 2>&1 | tee ~/machineinfo/_includes/index.md
 
 (
