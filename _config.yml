@@ -1,0 +1,4 @@
+title_tag_text: Travis-CI Machine Info
+h1_tag_text: Travis-CI Machine Info
+
+exclude: ["README.md"]
