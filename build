@@ -18,7 +18,7 @@ ref="$(git describe --all --long HEAD)"
   echo "## Free memory"
   free -t -m | sed -e's/^/    /'
   echo "## CPU Info"
-  perl -e'my @p; while(<>) { if (/^processor\s*:\s*(\d+)/) { push @p, [ $_, $1, "" ] } else { $p[-1][2] .= $_; } } my $last = ""; for (0..$#p) { if ($p[$_][2] eq $last) { ($p[$_][0] = $p[$_-1][0]) =~ s/\n/,$p[$_][1]\n/ } if (($_ != 0 && $p[$_][2] ne $last ) || $_ == $#p) { print $p[$_][0].$p[$_][2] } $last = $p[$_][2] }' /proc/cpuinfo | sed -e's/^/    /'
+  perl -e'my %p; my @p; while(<>) { s/\s+$//; /^([^:]+?)\s*:\s*(.*)/ or next; my ($k,$v) = ($1,$2); push @p, $k if !$p{$k}; push @{$p{$k}||=[]}, $v; } for (@p) { printf "%20s: ", $_; my %s; $s{$_}++ for @{$p{$_}}; if (1 == keys %s) { print $p{$_}[0] } else { print "[".join(",",@{$p{$_}})."]" } print "\n" }' /proc/cpuinfo | sed -e's/^/    /'
   echo "## Services"
   sudo service --status-all 2>&1 | sed -e's/^/    /'
   echo "## Processes"
