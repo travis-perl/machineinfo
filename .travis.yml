@@ -3,7 +3,7 @@ perl:
   - "5.20"
 env:
   global:
-    secure: BAY6rKd7XZggvIvemwv7kv+4C7epX61aoEuh3lID9rTaou7c9KpxJinMsLpuU6KdOtMERLYAF71Mr+bZFZTQe29OIlICB+SNrwIouK0Dpm8F/qnqmPLBvMCSsmk2sDMgwc2v4TaxdhGLbw7cIkdncosTJKRdTqvvc1okph+47KA=
+    secure: "ETGczm1Bc3FC60I6KAEFqIrbwVn69e+XoqmAhvIF5fPz2vX7N5COWD/ulcewh1E6bko9tJ3aT4Gt3caKDgx4yA0GuSPZ9vls48oKJ8F/hmXG+p1iocn9NwTW7VOqJqsk0SxcJpjbX/UxgXTv02gBco5SXfp5bCb8rHBeMvxFyBA="
 install: []
 script: ./build
 branches:
