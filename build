@@ -22,7 +22,7 @@ ref="$(git describe --all --long HEAD)"
   echo "## Services"
   sudo service --status-all 2>&1 | sed -e's/^/    /'
   echo "## Processes"
-  ps auxwww
+  ps auxwww | sed -e's/^/    /'
   echo "## Filesystem Info"
   df | sed -e's/^/    /'
 ) 2>&1 | tee ~/machineinfo/README.md
