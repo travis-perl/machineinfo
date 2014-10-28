@@ -33,6 +33,7 @@ ref="$(git describe --all --long HEAD)"
   echo ""
   echo "## CPU Info"
   echo "Processor count: $(grep -E '^processor\s*:' /proc/cpuinfo | wc -l)"
+  echo ""
   perl -0777 -p -e 's/\n\n.*/\n/s' /proc/cpuinfo | sed -e's/^/    /'
   echo ""
   echo "## Processes"
