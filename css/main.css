@@ -10,5 +10,5 @@ pre {
   background-color: #eee;
   border: 1px solid #ccc;
   border-radius: 5px;
+  max-height: 250px;
 }
-
