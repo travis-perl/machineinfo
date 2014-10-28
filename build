@@ -35,7 +35,7 @@ ref="$(git describe --all --long HEAD)"
   echo ""
   echo "## Services"
   sudo service --status-all 2>&1 | sed -e's/^/    /'
-) 2>&1 | tee ~/machineinfo/README.md
+) 2>&1 | tee ~/machineinfo/_includes/index.md
 
 (
   export GIT_AUTHOR_NAME="$(git log -n 1 --format='%an')"
@@ -44,7 +44,7 @@ ref="$(git describe --all --long HEAD)"
   export GIT_COMMITTER_EMAIL="travis-ci@$host"
 
   cd ~/machineinfo
-  git add README.md
+  git add _includes/index.md
   git commit -m"System info $host build with $ref"
   git push origin gh-pages
 )
