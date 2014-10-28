@@ -19,6 +19,8 @@ ref="$(git describe --all --long HEAD)"
   free -t -m | sed -e's/^/    /'
   echo "## Filesystem Info"
   df | sed -e's/^/    /'
+  echo "## Environment"
+  env | sed -e's/^/    /'
   echo "## CPU Info"
   perl -e'my %p; my @p; while(<>) { s/\s+$//; /^([^:]+?)\s*:\s*(.*)/ or next; my ($k,$v) = ($1,$2); push @p, $k if !$p{$k}; push @{$p{$k}||=[]}, $v; } for (@p) { printf "%20s: ", $_; my %s; $s{$_}++ for @{$p{$_}}; if (1 == keys %s) { print $p{$_}[0] } else { print "[".join(",",@{$p{$_}})."]" } print "\n" }' /proc/cpuinfo | sed -e's/^/    /'
   echo "## Processes"
