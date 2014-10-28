@@ -9,43 +9,53 @@ git clone --branch gh-pages $(pwd) ~/machineinfo
 host="$(hostname -f)"
 ref="$(git describe --all --long HEAD)"
 
-(
-  echo "# Machine Info"
-  echo ""
-  echo "## Kernel"
-  cat /proc/version | sed -e's/^/    /'
-  echo ""
-  echo "## Hostname"
-  echo "$host" | sed -e's/^/    /'
-  echo ""
-  echo "## Free memory"
-  free -t -m | sed -e's/^/    /'
-  echo ""
-  echo "## Filesystem Info"
-  df -h | sed -e's/^/    /'
-  echo ""
-  mount | grep '^/' | sed -e's/^/    /'
-  echo ""
-  echo "## Network Configuration"
-  ip addr | sed -e's/^/    /'
-  echo ""
-  echo "## Environment"
-  env | sort | grep -v '^SSH_KEY_PASS=' | sed -e's/^/    /'
-  echo ""
-  echo "## CPU Info"
-  echo "Processor count: $(grep -E '^processor\s*:' /proc/cpuinfo | wc -l)"
-  echo ""
-  perl -0777 -p -e 's/\n\n.*/\n/s' /proc/cpuinfo | sed -e's/^/    /'
-  echo ""
-  echo "## Processes"
-  ps fuxawww | sed -e's/^/    /'
-  echo ""
-  echo "## Services"
-  sudo service --status-all 2>&1 | sed -e's/^/    /'
-  echo ""
-  echo "## Packages"
-  dpkg -l | sed -e's/^/    /'
-) 2>&1 | tee ~/machineinfo/_includes/index.md
+output="
+# Machine Info
+
+## Kernel
+$(cat /proc/version | sed -e's/^/    /')
+
+## Hostname
+    $host
+
+## Distro Info
+$(cat /etc/lsb-release | sed -s's/^/    /')
+
+$(cat /etc/debian_version | sed -s's/^/    /')
+
+## Free memory
+$(free -t -m | sed -e's/^/    /')
+
+## Filesystem Info
+$(df -h | sed -e's/^/    /')
+
+$(mount | grep '^/' | sed -e's/^/    /')
+
+## Network Configuration
+$(ip addr | sed -e's/^/    /')
+
+## Environment
+$(env | grep -v '^SSH_KEY_PASS=' | sort | sed -e's/^/    /')
+
+## CPU Info
+Processor count: $(grep -E '^processor\s*:' /proc/cpuinfo | wc -l)
+
+$(perl -0777 -p -e 's/\n\n.*/\n/s' /proc/cpuinfo | sed -e's/^/    /')
+
+## Processes
+$(ps=$(ps fuxawww); echo "$ps" | sed -e's/^/    /')
+
+## Services
+$(sudo service --status-all 2>&1 | sed -e's/^/    /')
+
+## Perls
+$(perlbrew list | sed -e's/^/    /')
+
+## Packages
+$(dpkg -l | sed -e's/^/    /')
+"
+
+echo "$out" | tee ~/machineinfo/_includes/index.md
 
 (
   export GIT_AUTHOR_NAME="$(git log -n 1 --format='%an')"
