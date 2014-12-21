@@ -4,7 +4,7 @@ perl:
 sudo: false
 env:
   global:
-    secure: "ETGczm1Bc3FC60I6KAEFqIrbwVn69e+XoqmAhvIF5fPz2vX7N5COWD/ulcewh1E6bko9tJ3aT4Gt3caKDgx4yA0GuSPZ9vls48oKJ8F/hmXG+p1iocn9NwTW7VOqJqsk0SxcJpjbX/UxgXTv02gBco5SXfp5bCb8rHBeMvxFyBA="
+    secure: P2mXaBkjnNd8LIxpKbZAG4mwhBSicBXc2BwXK23dKLNLXFYtxNaJK7jkS1tOhReJUp+UfMrKonWXOEpdzB4Y0RzP5R23U+M9YWOK4NgWEGWTQTpyVue15klgVrgUjESbjGRASXf4k6MhOguKVtsp9JR9OsqjFfv/qHpOGem2wcM=
 install: []
 script: ./build
 branches:
