@@ -61,7 +61,7 @@ $(mount | grep '^/' | _indent)
 $( (ip addr 2>/dev/null || ifconfig ) | _indent)
 
 ## Environment
-$(perl -e'my ($length) = sort { $b <=> $a } map { length } keys %ENV; printf "%${length}s = %s\n", $_, $ENV{$_} for sort keys %ENV' | _indent)
+$(perl -e'my ($length) = sort { $b <=> $a } map { length } keys %ENV; printf "%${length}s = %s\n", $_, $ENV{$_} for sort grep { $_ ne "SSH_KEY_PASS" } keys %ENV' | _indent)
 
 ## CPU Info
 
