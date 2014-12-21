@@ -1,3 +1,5 @@
 title: Travis-CI Machine Info
 
 exclude: ["README.md"]
+
+baseurl: /machineinfo
