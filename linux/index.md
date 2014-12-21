@@ -1,31 +1,46 @@
 ---
 layout: default
 ---
-# Machine Info
 
-## Kernel
-    Linux version 2.6.32-042stab090.5 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Sat Jun 21 00:15:09 MSK 2014
+
+# Machine Info
 
 ## Hostname
     localhost.localdomain
 
+## sudo
+Available
+
+
+## Kernel
+    Linux version 2.6.32-042stab090.5 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Sat Jun 21 00:15:09 MSK 2014
+
+## Distro Info
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=12.04
+    DISTRIB_CODENAME=precise
+    DISTRIB_DESCRIPTION="Ubuntu 12.04 LTS"
+
+    wheezy/sid
+
+
 ## Free memory
                  total       used       free     shared    buffers     cached
-    Mem:          3072        670       2401          0          0          0
-    -/+ buffers/cache:        670       2401
+    Mem:          3072        448       2623          0          0        172
+    -/+ buffers/cache:        275       2796
     Swap:         1536          0       1536
-    Total:        4608        670       3937
+    Total:        4608        448       4159
 
 ## Filesystem Info
     Filesystem             Size  Used Avail Use% Mounted on
-    /vz/private/191256644  120G   23G   98G  20% /
+    /vz/private/196905987  428G   90G  330G  22% /
     none                   1.5G  8.0K  1.5G   1% /dev
     none                   308M   56K  308M   1% /run
     none                   5.0M   12K  5.0M   1% /run/lock
     none                   1.5G     0  1.5G   0% /run/shm
     /dev/null              768M  133M  636M  18% /var/ramfs
 
-    /vz/private/191256644 on / type simfs (rw)
+    /vz/private/196905987 on / type simfs (rw)
     /dev/null on /var/ramfs type tmpfs (rw,noatime,size=768m)
 
 ## Network Configuration
@@ -37,96 +52,106 @@ layout: default
     2: venet0: <BROADCAST,POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
         link/void 
         inet 127.0.0.2/32 scope host venet0
-        inet 172.30.237.12/32 scope global venet0:0
-        inet6 2607:f700:8001:147:bbba:562d:3b61:84a4/128 scope global 
+        inet 172.30.58.60/32 scope global venet0:0
+        inet6 2607:f700:8001:134:889a:2807:cdc8:eff3/128 scope global 
            valid_lft forever preferred_lft forever
 
 ## Environment
-    CI=true
-    COMPOSER_NO_INTERACTION=1
-    CONTINUOUS_INTEGRATION=true
-    DEBIAN_FRONTEND=noninteractive
-    DYLD_LIBRARY_PATH=/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
-    GEM_HOME=/home/travis/.rvm/gems/ruby-1.9.3-p547
-    GEM_PATH=/home/travis/.rvm/gems/ruby-1.9.3-p547:/home/travis/.rvm/gems/ruby-1.9.3-p547@global
-    GIT_ASKPASS=echo
-    GOPATH=/home/travis/.gvm/pkgsets/go1.3.3/global
-    GOROOT=/home/travis/.gvm/gos/go1.3.3
-    gvm_go_name=go1.3.3
-    GVM_OVERLAY_PREFIX=/home/travis/.gvm/pkgsets/go1.3.3/global/overlay
-    GVM_PATH_BACKUP=/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p547/bin:/home/travis/.rvm/gems/ruby-1.9.3-p547@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p547/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.32/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
-    gvm_pkgset_name=global
-    GVM_ROOT=/home/travis/.gvm
-    GVM_VERSION=1.0.22
-    HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE=true
-    HAS_JOSH_K_SEAL_OF_APPROVAL=true
-    HOME=/home/travis
-    IRBRC=/home/travis/.rvm/rubies/ruby-1.9.3-p547/.irbrc
-    JAVA_HOME=/usr/lib/jvm/java-7-oracle
-    JRUBY_OPTS=--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false
-    LANG=en_US.UTF-8
-    LC_ALL=en_US.UTF-8
-    LC_CTYPE=en_US.UTF-8
-    LD_LIBRARY_PATH=/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
-    LOGNAME=travis
-    MAIL=/var/mail/travis
-    MANPATH=/home/travis/perl5/perlbrew/perls/5.20/man:/home/travis/.nvm/v0.10.32/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man
-    MERB_ENV=test
-    MY_RUBY_HOME=/home/travis/.rvm/rubies/ruby-1.9.3-p547
-    NODE_PATH=/home/travis/.nvm/v0.10.32/lib/node_modules
-    NVM_BIN=/home/travis/.nvm/v0.10.32/bin
-    NVM_DIR=/home/travis/.nvm
-    NVM_NODEJS_ORG_MIRROR=http://nodejs.org/dist
-    NVM_PATH=/home/travis/.nvm/v0.10.32/lib/node
-    PATH=/home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.32/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p547/bin:/home/travis/.rvm/gems/ruby-1.9.3-p547@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p547/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
-    PERLBREW_BASHRC_VERSION=0.71
-    PERLBREW_HOME=/home/travis/.perlbrew
-    PERLBREW_MANPATH=/home/travis/perl5/perlbrew/perls/5.20/man
-    PERLBREW_PATH=/home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin
-    PERLBREW_PERL=5.20
-    PERLBREW_ROOT=/home/travis/perl5/perlbrew
-    PERLBREW_VERSION=0.71
-    PKG_CONFIG_PATH=/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:
-    PS4=+
-    PWD=/home/travis/build/travis-perl/machineinfo
-    RACK_ENV=test
-    RAILS_ENV=test
-    RUBY_VERSION=ruby-1.9.3-p547
-    rvm_autoupdate_flag=0
-    rvm_bin_path=/home/travis/.rvm/bin
-    rvm_path=/home/travis/.rvm
-    rvm_prefix=/home/travis
-    rvm_silence_path_mismatch_check_flag=1
-    rvm_version=1.25.28 (version)
-    SHELL=/bin/bash
-    SHLVL=4
-    SSH_CLIENT=2607:f700:8000:12d:5581:db1a:1f19:3f4f 60805 22
-    SSH_CONNECTION=2607:f700:8000:12d:5581:db1a:1f19:3f4f 60805 2607:f700:8001:147:bbba:562d:3b61:84a4 22
-    SSH_TTY=/dev/pts/0
-    _system_arch=x86_64
-    _system_name=Ubuntu
-    _system_type=Linux
-    _system_version=12.04
-    TERM=xterm
-    TRAVIS_BRANCH=master
-    TRAVIS_BUILD_DIR=/home/travis/build/travis-perl/machineinfo
-    TRAVIS_BUILD_ID=39236438
-    TRAVIS_BUILD_NUMBER=16
-    TRAVIS_COMMIT=b572f3d1b1663f4c94bea7eb0e936a7bdde3346b
-    TRAVIS_COMMIT_RANGE=9255b45a181d...b572f3d1b166
-    TRAVIS_JOB_ID=39236439
-    TRAVIS_JOB_NUMBER=16.1
-    TRAVIS_OS_NAME=
-    TRAVIS_PERL_VERSION=5.20
-    TRAVIS_PULL_REQUEST=false
-    TRAVIS_REPO_SLUG=travis-perl/machineinfo
-    TRAVIS_SECURE_ENV_VARS=true
-    TRAVIS_TAG=
-    TRAVIS=true
-    USER=travis
-    _=/usr/bin/env
+                                         CI = true
+                    COMPOSER_NO_INTERACTION = 1
+                     CONTINUOUS_INTEGRATION = true
+                            DEBIAN_FRONTEND = noninteractive
+                          DYLD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                                   GEM_HOME = /home/travis/.rvm/gems/ruby-1.9.3-p551
+                                   GEM_PATH = /home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global
+                                GIT_ASKPASS = echo
+                                     GOPATH = /home/travis/.gvm/pkgsets/go1.3.3/global
+                                     GOROOT = /home/travis/.gvm/gos/go1.3.3
+                         GVM_OVERLAY_PREFIX = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay
+                            GVM_PATH_BACKUP = /home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                                   GVM_ROOT = /home/travis/.gvm
+                                GVM_VERSION = 1.0.22
+    HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE = true
+                HAS_JOSH_K_SEAL_OF_APPROVAL = true
+                                       HOME = /home/travis
+                                      IRBRC = /home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc
+                                  JAVA_HOME = /usr/lib/jvm/java-7-oracle
+                                 JRUBY_OPTS = --client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false
+                                       LANG = en_US.UTF-8
+                                     LC_ALL = en_US.UTF-8
+                                   LC_CTYPE = en_US.UTF-8
+                            LD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                                    LOGNAME = travis
+                                       MAIL = /var/mail/travis
+                                    MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man:/home/travis/.nvm/v0.10.33/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man
+                                   MERB_ENV = test
+                               MY_RUBY_HOME = /home/travis/.rvm/rubies/ruby-1.9.3-p551
+                                  NODE_PATH = /home/travis/.nvm/v0.10.33/lib/node_modules
+                                    NVM_BIN = /home/travis/.nvm/v0.10.33/bin
+                                    NVM_DIR = /home/travis/.nvm
+                      NVM_NODEJS_ORG_MIRROR = https://nodejs.org/dist
+                                   NVM_PATH = /home/travis/.nvm/v0.10.33/lib/node
+                                       PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                    PERLBREW_BASHRC_VERSION = 0.71
+                              PERLBREW_HOME = /home/travis/.perlbrew
+                           PERLBREW_MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man
+                              PERLBREW_PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin
+                              PERLBREW_PERL = 5.20
+                              PERLBREW_ROOT = /home/travis/perl5/perlbrew
+                           PERLBREW_VERSION = 0.71
+                            PKG_CONFIG_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:
+                                        PS4 = +
+                                        PWD = /home/travis/build/travis-perl/machineinfo
+                                   RACK_ENV = test
+                                  RAILS_ENV = test
+                               RUBY_VERSION = ruby-1.9.3-p551
+                                      SHELL = /bin/bash
+                                      SHLVL = 5
+                                 SSH_CLIENT = 2607:f700:8000:12d:2ef1:ac3d:f88f:b877 40940 22
+                             SSH_CONNECTION = 2607:f700:8000:12d:2ef1:ac3d:f88f:b877 40940 2607:f700:8001:134:889a:2807:cdc8:eff3 22
+                               SSH_KEY_PASS = 1EEiyqQLMVYshFMj8DygT6ZSdZM2wCnzicJFNhLw
+                                    SSH_TTY = /dev/pts/0
+                                       TERM = xterm
+                                     TRAVIS = true
+                              TRAVIS_BRANCH = master
+                           TRAVIS_BUILD_DIR = /home/travis/build/travis-perl/machineinfo
+                            TRAVIS_BUILD_ID = 44716709
+                        TRAVIS_BUILD_NUMBER = 22
+                              TRAVIS_COMMIT = 3ab1797c05adeb26928c3e68ed27f7d2a6d40d19
+                        TRAVIS_COMMIT_RANGE = cd308d3deb16...3ab1797c05ad
+                              TRAVIS_JOB_ID = 44716710
+                          TRAVIS_JOB_NUMBER = 22.1
+                            TRAVIS_LANGUAGE = perl
+                             TRAVIS_OS_NAME = linux
+                        TRAVIS_PERL_VERSION = 5.20
+                        TRAVIS_PULL_REQUEST = false
+                           TRAVIS_REPO_SLUG = travis-perl/machineinfo
+                     TRAVIS_SECURE_ENV_VARS = true
+                                 TRAVIS_TAG = 
+                                       USER = travis
+                                          _ = /home/travis/perl5/perlbrew/perls/5.20/bin/perl
+                               _system_arch = x86_64
+                               _system_name = Ubuntu
+                               _system_type = Linux
+                            _system_version = 12.04
+                                gvm_go_name = go1.3.3
+                            gvm_pkgset_name = global
+                        rvm_autoupdate_flag = 0
+                               rvm_bin_path = /home/travis/.rvm/bin
+                            rvm_loaded_flag = 1
+                          rvm_max_time_flag = 5
+                                   rvm_path = /home/travis/.rvm
+                                 rvm_prefix = /home/travis
+                          rvm_project_rvmrc = 0
+       rvm_silence_path_mismatch_check_flag = 1
+                           rvm_stored_umask = 0002
+                      rvm_user_install_flag = 1
+                                rvm_version = 1.26.3 (1.26.3)
+                      rvm_with_default_gems = rake=~>10.2.2 bundler=~>1.6.0
+                           rvm_without_gems = rubygems-bundler
 
 ## CPU Info
+
 Processor count: 32
 
     processor	: 0
@@ -135,7 +160,7 @@ Processor count: 32
     model		: 2
     model name	: AMD Opteron(tm) Processor 6376                 
     stepping	: 0
-    cpu MHz		: 2300.035
+    cpu MHz		: 2300.063
     cache size	: 2048 KB
     physical id	: 0
     siblings	: 16
@@ -148,7 +173,7 @@ Processor count: 32
     cpuid level	: 13
     wp		: yes
     flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nonstop_tsc extd_apicid amd_dcm aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core arat cpb npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold bmi1
-    bogomips	: 4600.07
+    bogomips	: 4600.12
     TLB size	: 1536 4K pages
     clflush size	: 64
     cache_alignment	: 64
@@ -157,84 +182,80 @@ Processor count: 32
 
 ## Processes
     USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root         1  2.2  0.0  24140  2096 ?        Ss   07:42   0:00 init
-    root         2  0.0  0.0      0     0 ?        S    07:42   0:00 [kthreadd/191256]
-    root         3  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [khelper/1912566]
-    root         4  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root         5  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root         6  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root         7  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root         8  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root         9  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        10  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        11  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        12  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        13  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        14  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        15  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        16  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        17  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        18  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        19  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        20  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        21  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        22  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        23  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        24  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        25  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        26  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        27  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        28  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        29  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        30  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        31  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        32  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        33  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        34  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        35  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [rpciod/19125664]
-    root        36  0.0  0.0      0     0 ?        S    07:42   0:00  \_ [nfsiod/19125664]
-    root       182  0.2  0.0  17180   724 ?        S    07:42   0:00 upstart-udev-bridge --daemon
-    root       187  0.0  0.0  21284  1100 ?        Ss   07:42   0:00 /sbin/udevd --daemon
-    root       224  0.0  0.0  21280   656 ?        S    07:42   0:00  \_ /sbin/udevd --daemon
-    root       229  0.0  0.0  21280   656 ?        S    07:42   0:00  \_ /sbin/udevd --daemon
-    112        217  0.0  0.0  23764   760 ?        Ss   07:42   0:00 dbus-daemon --system --fork --activation=upstart
-    syslog     256  0.0  0.0 177696  1640 ?        Sl   07:42   0:00 rsyslogd -c5
-    root       291  0.0  0.0   4344   496 ?        S    07:42   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       296  0.0  0.0   6304   540 ?        S    07:42   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
-    root       300  0.0  0.0  14940   988 ?        S    07:42   0:00  \_ /usr/sbin/ntpdate -s ntp.ubuntu.com
-    root       299  0.0  0.0  15136   548 ?        S    07:42   0:00 upstart-socket-bridge --daemon
-    root       335  0.0  0.0   4348   464 ?        S    07:42   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       337  0.0  0.0   6304   580 ?        S    07:42   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       342  0.0  0.0   4344   628 ?        S    07:42   0:00 ping -c 1 208.85.151.253
-    root       343  0.0  0.0  14724  1272 ?        S    07:42   0:00 ping6 -c 1 2607:f700:0:ffff::5
-    root       344  0.0  0.0   4344   632 ?        S    07:42   0:00 ping -c 1 208.85.151.254
-    root       345  0.0  0.0  14724  1276 ?        S    07:42   0:00 ping6 -c 1 2607:f700:0:ffff::6
-    root       346  0.0  0.0   4344   628 ?        S    07:42   0:00 ping -c 1 185.22.255.254
-    root       347  0.0  0.0  14724  1268 ?        S    07:42   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
-    root       348  0.0  0.0   4344   628 ?        S    07:42   0:00 ping -c 1 199.91.168.5
-    root       349  0.0  0.0  14724  1276 ?        S    07:42   0:00 ping6 -c 1 2607:f700:8000::5
-    root       350  0.0  0.0   4344   624 ?        S    07:42   0:00 ping -c 1 199.91.168.6
-    root       351  0.0  0.0  14724  1268 ?        S    07:42   0:00 ping6 -c 1 2607:f700:8000::6
-    root       383  0.0  0.0   4348   464 ?        S    07:42   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       385  0.0  0.0   6304   580 ?        S    07:42   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       392  0.0  0.0  49980  2920 ?        Ss   07:42   0:00 /usr/sbin/sshd -D
-    root       564  0.6  0.1  73384  3620 ?        Ss   07:42   0:00  \_ sshd: travis [priv] 
-    travis     605  0.0  0.0  73544  1988 ?        S    07:42   0:00      \_ sshd: travis@pts/0  
-    travis    1295  9.5  0.1  15160  4620 pts/0    Ss+  07:42   0:00          \_ /bin/bash /home/travis/build.sh
-    travis    1770  0.0  0.0  12316  1508 pts/0    S+   07:42   0:00              \_ /bin/bash ./build
-    travis    1787  0.0  0.0  12316   884 pts/0    S+   07:42   0:00                  \_ /bin/bash ./build
-    travis    1811  0.0  0.0  18224  1220 pts/0    R+   07:42   0:00                  |   \_ ps fuxawww
-    travis    1812  0.0  0.0  11448   888 pts/0    S+   07:42   0:00                  |   \_ sed -es/^/    /
-    travis    1788  0.0  0.0   7112   696 pts/0    S+   07:42   0:00                  \_ tee /home/travis/machineinfo/_includes/index.md
-    root       434  0.0  0.0  19060   924 ?        Ss   07:42   0:00 cron
-    mysql      458  4.0  3.2 967116 101056 ?       Ssl  07:42   0:00 /usr/sbin/mysqld
-    postgres   511  5.4  0.4 135580 15684 ?        S    07:42   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
-    postgres   513  0.0  0.0 135580  1896 ?        Ss   07:42   0:00  \_ postgres: writer process                                                                                                      
-    postgres   514  0.0  0.0 135580  1808 ?        Ss   07:42   0:00  \_ postgres: wal writer process                                                                                                  
-    postgres   515  0.0  0.0 136452  2992 ?        Ss   07:42   0:00  \_ postgres: autovacuum launcher process                                                                                         
-    postgres   516  0.0  0.0  96380  1760 ?        Ss   07:42   0:00  \_ postgres: stats collector process                                                                                             
-    root       798  0.0  0.0   4344   744 ?        S    07:42   0:00 /bin/sh /etc/init.d/ondemand background
-    root       805  0.0  0.0   4252   524 ?        S    07:42   0:00  \_ sleep 60
+    root         1  3.0  0.0  24128  2084 ?        Ss   04:24   0:00 init
+    root         2  0.0  0.0      0     0 ?        S    04:24   0:00 [kthreadd/196905]
+    root         3  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [khelper/1969059]
+    root         4  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root         5  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root         6  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root         7  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root         8  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root         9  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        10  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        11  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        12  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        13  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        14  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        15  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        16  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        17  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        18  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        19  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        20  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        21  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        22  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        23  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        24  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        25  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        26  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        27  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        28  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        29  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        30  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        31  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        32  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        33  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        34  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        35  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [rpciod/19690598]
+    root        36  0.0  0.0      0     0 ?        S    04:24   0:00  \_ [nfsiod/19690598]
+    root       149  0.2  0.0  17180   720 ?        S    04:24   0:00 upstart-udev-bridge --daemon
+    root       156  0.0  0.0  21284  1092 ?        Ss   04:24   0:00 /sbin/udevd --daemon
+    root       198  0.0  0.0  21280   656 ?        S    04:24   0:00  \_ /sbin/udevd --daemon
+    root       202  0.0  0.0  21280   656 ?        S    04:24   0:00  \_ /sbin/udevd --daemon
+    112        193  0.0  0.0  23768   752 ?        Ss   04:24   0:00 dbus-daemon --system --fork --activation=upstart
+    syslog     248  2.6  0.0 177696  1636 ?        Sl   04:24   0:00 rsyslogd -c5
+    root       256  0.0  0.0   4348   500 ?        S    04:24   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       261  0.0  0.0   6304   544 ?        S    04:24   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
+    root       263  0.0  0.0  14940  1080 ?        S<   04:24   0:00  \_ /usr/sbin/ntpdate -s ntp.ubuntu.com
+    root       268  0.0  0.0  15136   556 ?        S    04:24   0:00 upstart-socket-bridge --daemon
+    root       305  0.0  0.0   4348   468 ?        S    04:24   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       309  0.0  0.0   6304   584 ?        S    04:24   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       348  0.0  0.0   4348   464 ?        S    04:24   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       350  0.0  0.0   6304   588 ?        S    04:24   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       357  0.0  0.0  49980  2916 ?        Ss   04:24   0:00 /usr/sbin/sshd -D
+    root       632  1.0  0.1  73384  3616 ?        Ss   04:24   0:00  \_ sshd: travis [priv] 
+    travis     636  0.0  0.0  73544  1984 ?        S    04:24   0:00      \_ sshd: travis@pts/0  
+    travis    1279 22.0  0.1  15556  4940 pts/0    Ss+  04:24   0:00          \_ bash --login /home/travis/build.sh
+    travis    1910  0.0  0.0  12296  1448 pts/0    S+   04:24   0:00              \_ /bin/bash ./build
+    travis    1911  0.0  0.0  12412  1604 pts/0    S+   04:24   0:00                  \_ /bin/bash ./info
+    travis    1961  0.0  0.0  12412   744 pts/0    S+   04:24   0:00                      \_ /bin/bash ./info
+    travis    1962  0.0  0.0  12412   776 pts/0    S+   04:24   0:00                          \_ /bin/bash ./info
+    travis    1963  0.0  0.0  18224  1220 pts/0    R+   04:24   0:00                              \_ ps fuxawww
+    root       402  0.0  0.0  19060   920 ?        Ss   04:24   0:00 cron
+    mysql      426  3.2  3.4 908892 107012 ?       Ssl  04:24   0:00 /usr/sbin/mysqld
+    root       464  0.0  0.0  14724  1268 ?        S    04:24   0:00 ping6 -c 1 2607:f700:0:ffff::5
+    root       466  0.0  0.0  14724  1272 ?        S    04:24   0:00 ping6 -c 1 2607:f700:0:ffff::6
+    root       468  0.0  0.0  14724  1272 ?        S    04:24   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
+    root       470  0.0  0.0  14724  1268 ?        S    04:24   0:00 ping6 -c 1 2607:f700:8000::5
+    root       472  0.0  0.0  14724  1268 ?        S    04:24   0:00 ping6 -c 1 2607:f700:8000::6
+    postgres   492 10.0  0.4 135580 15672 ?        S    04:24   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+    postgres   494  0.0  0.0 135580  1888 ?        Ss   04:24   0:00  \_ postgres: writer process                                                                                                      
+    postgres   495  0.0  0.0 135580  1800 ?        Ss   04:24   0:00  \_ postgres: wal writer process                                                                                                  
+    postgres   496  0.0  0.0 136452  2988 ?        Ss   04:24   0:00  \_ postgres: autovacuum launcher process                                                                                         
+    postgres   497  0.0  0.0  96380  1756 ?        Ss   04:24   0:00  \_ postgres: stats collector process                                                                                             
+    root       625  3.0  0.0   4344   744 ?        S    04:24   0:00 /bin/sh /etc/init.d/ondemand background
+    root       631  0.0  0.0   4256   532 ?        S    04:24   0:00  \_ sleep 60
+
 
 ## Services
      [ - ]  bootlogd
@@ -264,7 +285,7 @@ Processor count: 32
      [ ? ]  plymouth-splash
      [ ? ]  plymouth-stop
      [ ? ]  plymouth-upstart-bridge
-     [ - ]  postgresql
+     [ + ]  postgresql
      [ ? ]  procps
      [ - ]  rabbitmq-server
      [ ? ]  rc.local
@@ -291,7 +312,23 @@ Processor count: 32
      [ - ]  urandom
      [ - ]  x11-common
 
+
+## Perls
+      5.8 (5.8.9)
+      5.10 (5.10.1)
+      5.12 (5.12.5)
+      5.14 (5.14.4)
+      5.16 (5.16.3)
+      5.18 (5.18.2)
+      5.18-extras (5.18.2)
+      5.18-shrplib (5.18.2)
+    * 5.20 (5.20.0)
+      5.20-extras (5.20.0)
+      5.20-shrplib (5.20.0)
+      5.21 (5.21.0)
+
 ## Packages
+
     Desired=Unknown/Install/Remove/Purge/Hold
     | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
     |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
@@ -309,7 +346,7 @@ Processor count: 32
     ii  autotools-dev                       20120210.1ubuntu1                                   Update infrastructure for config.{guess,sub} files
     ii  base-files                          6.5ubuntu6                                          Debian base system miscellaneous files
     ii  base-passwd                         3.5.24                                              Debian base system master password and group files
-    ii  bash                                4.2-2ubuntu2                                        GNU Bourne Again SHell
+    ii  bash                                4.2-2ubuntu2.6                                      GNU Bourne Again SHell
     ii  binutils                            2.22-6ubuntu1                                       GNU assembler, linker and binary utilities
     ii  binutils-doc                        2.22-6ubuntu1.1                                     Documentation for the GNU assembler, linker and binary utilities
     ii  bison                               1:2.5.dfsg-2.1                                      YACC-compatible parser generator
@@ -319,7 +356,7 @@ Processor count: 32
     ii  busybox-initramfs                   1:1.18.5-1ubuntu4                                   Standalone shell setup for initramfs
     ii  bzip2                               1.0.6-1                                             high-quality block-sorting file compressor - utilities
     ii  bzr                                 2.5.1-0ubuntu2                                      easy to use distributed version control system
-    ii  ca-certificates                     20111211                                            Common CA certificates
+    ii  ca-certificates                     20130906ubuntu0.12.04.1                             Common CA certificates
     ii  ca-certificates-java                20110912ubuntu6                                     Common CA certificates (JKS keystore)
     ii  chef                                11.8.2-1.ubuntu.12.04                               The full stack of chef
     ii  chromium-browser                    37.0.2062.120-0ubuntu0.12.04.1~pkg917               Chromium browser
@@ -340,8 +377,8 @@ Processor count: 32
     ii  cron                                3.0pl1-120ubuntu3                                   process scheduling daemon
     ii  curl                                7.22.0-3ubuntu4                                     Get a file from an HTTP, HTTPS or FTP server
     ii  dash                                0.5.7-2ubuntu2                                      POSIX-compliant shell
-    ii  dbus                                1.4.18-1ubuntu1.6                                   simple interprocess messaging system (daemon and utilities)
-    ii  dbus-x11                            1.4.18-1ubuntu1.6                                   simple interprocess messaging system (X11 deps)
+    ii  dbus                                1.4.18-1ubuntu1.7                                   simple interprocess messaging system (daemon and utilities)
+    ii  dbus-x11                            1.4.18-1ubuntu1.7                                   simple interprocess messaging system (X11 deps)
     ii  dconf-gsettings-backend             0.12.0-0ubuntu1.1                                   simple configuration storage system - GSettings back-end
     ii  dconf-service                       0.12.0-0ubuntu1.1                                   simple configuration storage system - D-Bus service
     ii  debconf                             1.5.42ubuntu1                                       Debian configuration management system
@@ -357,7 +394,7 @@ Processor count: 32
     ii  e2fslibs                            1.42-1ubuntu2                                       ext2/ext3/ext4 file system libraries
     ii  e2fsprogs                           1.42-1ubuntu2                                       ext2/ext3/ext4 file system utilities
     ii  eject                               2.1.5+deb1+cvs20081104-9                            ejects CDs and operates CD-Changers under Linux
-    ii  elasticsearch                       1.3.2                                               Open Source, Distributed, RESTful Search Engine
+    ii  elasticsearch                       1.4.0                                               Open Source, Distributed, RESTful Search Engine
     ii  emacs23-bin-common                  23.3+1-1ubuntu9.2                                   The GNU Emacs editor's shared, architecture dependent files
     ii  emacs23-common                      23.3+1-1ubuntu9.2                                   The GNU Emacs editor's shared, architecture independent infrastructure
     ii  emacs23-nox                         23.3+1-1ubuntu9.2                                   The GNU Emacs editor (without X support)
@@ -425,13 +462,14 @@ Processor count: 32
     ii  groff-base                          1.21-7                                              GNU troff text-formatting system (base system components)
     ii  gs-cjk-resource                     1.20100103-3                                        Resource files for gs-cjk, ghostscript CJK-TrueType extension
     ii  gsfonts                             1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1                 Fonts for the Ghostscript interpreter(s)
+    ii  gsfonts-x11                         0.22                                                Make Ghostscript fonts available to X11
     ii  guile-1.8-libs                      1.8.8+1-6ubuntu2                                    Core Guile libraries
     ii  gzip                                1.4-1ubuntu2                                        GNU compression utilities
     ii  hicolor-icon-theme                  0.12-1ubuntu2                                       default fallback theme for FreeDesktop.org icon themes
     ii  hostname                            3.06ubuntu1                                         utility to set/show the host name or domain name
     ii  html2text                           1.3.2a-15                                           advanced HTML to text converter
-    ii  icedtea-6-jre-cacao                 6b32-1.13.4-4ubuntu0.12.04.2                        Alternative JVM for OpenJDK, using Cacao
-    ii  icedtea-6-jre-jamvm                 6b32-1.13.4-4ubuntu0.12.04.2                        Alternative JVM for OpenJDK, using JamVM
+    ii  icedtea-6-jre-cacao                 6b33-1.13.5-1ubuntu0.12.04                          Alternative JVM for OpenJDK, using Cacao
+    ii  icedtea-6-jre-jamvm                 6b33-1.13.5-1ubuntu0.12.04                          Alternative JVM for OpenJDK, using JamVM
     ii  ifupdown                            0.7~beta2ubuntu8                                    high level tools to configure network interfaces
     ii  imagemagick                         8:6.6.9.7-5ubuntu3.3                                image manipulation programs
     ii  imagemagick-common                  8:6.6.9.7-5ubuntu3.3                                image manipulation programs -- infrastructure
@@ -502,9 +540,9 @@ Processor count: 32
     ii  libcroco3                           0.6.5-1ubuntu0.1                                    Cascading Style Sheet (CSS) parsing and manipulation toolkit
     ii  libcups2                            1.5.3-0ubuntu8.5                                    Common UNIX Printing System(tm) - Core library
     ii  libcupsimage2                       1.5.3-0ubuntu8.5                                    Common UNIX Printing System(tm) - Raster image library
-    ii  libcurl3                            7.22.0-3ubuntu4.10                                  Multi-protocol file transfer library (OpenSSL)
+    ii  libcurl3                            7.22.0-3ubuntu4.11                                  Multi-protocol file transfer library (OpenSSL)
     ii  libcurl3-gnutls                     7.22.0-3ubuntu4                                     Multi-protocol file transfer library (GnuTLS)
-    ii  libcurl4-openssl-dev                7.22.0-3ubuntu4.10                                  Development files and documentation for libcurl (OpenSSL)
+    ii  libcurl4-openssl-dev                7.22.0-3ubuntu4.11                                  Development files and documentation for libcurl (OpenSSL)
     ii  libdap11                            3.11.1-10                                           Open-source Project for a Network Data Access Protocol library
     ii  libdapclient3                       3.11.1-10                                           Client library for the Network Data Access Protocol
     ii  libdatrie1                          0.2.5-3                                             Double-array trie library
@@ -675,8 +713,8 @@ Processor count: 32
     ii  libmysql++-dev                      3.1.0-2                                             MySQL C++ library bindings (development)
     ii  libmysql++3                         3.1.0-2                                             MySQL C++ library bindings (runtime)
     ii  libmysql-ruby                       2.8.2+gem2deb-1build1                               Transitional package for ruby-mysql
-    ii  libmysqlclient-dev                  5.5.38-0ubuntu0.12.04.1                             MySQL database development files
-    ii  libmysqlclient18                    5.5.38-0ubuntu0.12.04.1                             MySQL database client library
+    ii  libmysqlclient-dev                  5.5.40-0ubuntu0.12.04.1                             MySQL database development files
+    ii  libmysqlclient18                    5.5.40-0ubuntu0.12.04.1                             MySQL database client library
     ii  libncurses5                         5.9-4                                               shared libraries for terminal handling
     ii  libncurses5-dev                     5.9-4                                               developer's libraries for ncurses
     ii  libncursesw5                        5.9-4                                               shared libraries for terminal handling (wide character support)
@@ -768,7 +806,7 @@ Processor count: 32
     ii  librsvg2-dev                        2.36.1-0ubuntu1.1                                   SAX-based renderer library for SVG files (development)
     ii  librtmp-dev                         2.4~20110711.gitc28f1bab-1                          toolkit for RTMP streams (development files)
     ii  librtmp0                            2.4~20110711.gitc28f1bab-1                          toolkit for RTMP streams (shared library)
-    ii  libruby1.8                          1.8.7.352-2ubuntu1.4                                Libraries necessary to run Ruby 1.8
+    ii  libruby1.8                          1.8.7.352-2ubuntu1.6                                Libraries necessary to run Ruby 1.8
     ii  libsasl2-2                          2.1.25.dfsg1-3ubuntu0.1                             Cyrus SASL - authentication abstraction library
     ii  libsasl2-dev                        2.1.25.dfsg1-3ubuntu0.1                             Cyrus SASL - development files for authentication abstraction library
     ii  libsasl2-modules                    2.1.25.dfsg1-3ubuntu0.1                             Cyrus SASL - pluggable authentication modules
@@ -782,10 +820,10 @@ Processor count: 32
     ii  libsqlite3-0                        3.7.9-2ubuntu1.1                                    SQLite 3 shared library
     ii  libsqlite3-dev                      3.7.9-2ubuntu1.1                                    SQLite 3 development files
     ii  libss2                              1.42-1ubuntu2                                       command-line interface parsing library
-    ii  libssl-dev                          1.0.1-4ubuntu5.18                                   SSL development libraries, header files and documentation
-    ii  libssl-doc                          1.0.1-4ubuntu5.18                                   SSL development documentation documentation
+    ii  libssl-dev                          1.0.1-4ubuntu5.20                                   SSL development libraries, header files and documentation
+    ii  libssl-doc                          1.0.1-4ubuntu5.20                                   SSL development documentation documentation
     ii  libssl0.9.8                         0.9.8o-7ubuntu3.2                                   SSL shared libraries
-    ii  libssl1.0.0                         1.0.1-4ubuntu5.18                                   SSL shared libraries
+    ii  libssl1.0.0                         1.0.1-4ubuntu5.20                                   SSL shared libraries
     ii  libstartup-notification0            0.12-1ubuntu1                                       library for program launch feedback (shared library)
     ii  libstdc++6                          4.6.3-1ubuntu5                                      GNU Standard C++ Library v3
     ii  libstdc++6-4.6-dev                  4.6.3-1ubuntu5                                      GNU Standard C++ Library v3 (development files)
@@ -860,9 +898,9 @@ Processor count: 32
     ii  libxkbfile1                         1:1.0.7-1ubuntu0.1                                  X11 keyboard file manipulation library
     ii  libxml-commons-external-java        1.4.01-2                                            XML Commons external code - DOM, SAX, and JAXP, etc
     ii  libxml-commons-resolver1.1-java     1.2-7                                               XML entity and URI resolver library
-    ii  libxml2                             2.7.8.dfsg-5.1ubuntu4.9                             GNOME XML library
-    ii  libxml2-dev                         2.7.8.dfsg-5.1ubuntu4.9                             Development files for the GNOME XML library
-    ii  libxml2-utils                       2.7.8.dfsg-5.1ubuntu4.9                             XML utilities
+    ii  libxml2                             2.7.8.dfsg-5.1ubuntu4.11                            GNOME XML library
+    ii  libxml2-dev                         2.7.8.dfsg-5.1ubuntu4.11                            Development files for the GNOME XML library
+    ii  libxml2-utils                       2.7.8.dfsg-5.1ubuntu4.11                            XML utilities
     ii  libxmlrpc-core-c3                   1.16.33-3.1ubuntu5.1                                lightweight RPC library based on XML and HTTP [C runtime libraries]
     ii  libxmu6                             2:1.1.0-3                                           X11 miscellaneous utility library
     ii  libxmuu1                            2:1.1.0-3                                           X11 miscellaneous micro-utility library
@@ -909,17 +947,17 @@ Processor count: 32
     ii  mingw32-binutils                    2.20-0.2                                            Minimalist GNU win32 (cross) binutils
     ii  mingw32-runtime                     3.15.2-0ubuntu1                                     Minimalist GNU win32 (cross) runtime
     ii  module-init-tools                   3.16-1ubuntu2                                       tools for managing Linux kernel modules
-    ii  mongodb-10gen                       2.4.11                                              An object/document-oriented database
+    ii  mongodb-10gen                       2.4.12                                              An object/document-oriented database
     ii  mount                               2.20.1-1ubuntu3                                     Tools for mounting and manipulating filesystems
     ii  mountall                            2.36                                                filesystem mounting tool
     ii  multiarch-support                   2.15-0ubuntu10                                      Transitional package to ensure multiarch compatibility
-    ii  mysql-client                        5.5.38-0ubuntu0.12.04.1                             MySQL database client (metapackage depending on the latest version)
-    ii  mysql-client-5.5                    5.5.38-0ubuntu0.12.04.1                             MySQL database client binaries
-    ii  mysql-client-core-5.5               5.5.38-0ubuntu0.12.04.1                             MySQL database core client binaries
-    ii  mysql-common                        5.5.38-0ubuntu0.12.04.1                             MySQL database common files, e.g. /etc/mysql/my.cnf
-    ii  mysql-server                        5.5.38-0ubuntu0.12.04.1                             MySQL database server (metapackage depending on the latest version)
-    ii  mysql-server-5.5                    5.5.38-0ubuntu0.12.04.1                             MySQL database server binaries and system database setup
-    ii  mysql-server-core-5.5               5.5.38-0ubuntu0.12.04.1                             MySQL database server binaries
+    ii  mysql-client                        5.5.40-0ubuntu0.12.04.1                             MySQL database client (metapackage depending on the latest version)
+    ii  mysql-client-5.5                    5.5.40-0ubuntu0.12.04.1                             MySQL database client binaries
+    ii  mysql-client-core-5.5               5.5.40-0ubuntu0.12.04.1                             MySQL database core client binaries
+    ii  mysql-common                        5.5.40-0ubuntu0.12.04.1                             MySQL database common files, e.g. /etc/mysql/my.cnf
+    ii  mysql-server                        5.5.40-0ubuntu0.12.04.1                             MySQL database server (metapackage depending on the latest version)
+    ii  mysql-server-5.5                    5.5.40-0ubuntu0.12.04.1                             MySQL database server binaries and system database setup
+    ii  mysql-server-core-5.5               5.5.40-0ubuntu0.12.04.1                             MySQL database server binaries
     ii  ncurses-base                        5.9-4                                               basic terminal type definitions
     ii  ncurses-bin                         5.9-4                                               terminal-related programs and man pages
     ii  net-tools                           1.60-24.1ubuntu2                                    The NET-3 networking toolkit
@@ -930,12 +968,12 @@ Processor count: 32
     ii  ntpdate                             1:4.2.6.p3+dfsg-1ubuntu3                            client for setting system time from NTP servers
     ii  odbcinst                            2.2.14p2-5ubuntu3                                   Helper program for accessing odbc ini files
     ii  odbcinst1debian2                    2.2.14p2-5ubuntu3                                   Support library for accessing odbc ini files
-    ii  openjdk-6-jre-headless              6b32-1.13.4-4ubuntu0.12.04.2                        OpenJDK Java runtime, using Hotspot JIT (headless)
-    ii  openjdk-6-jre-lib                   6b32-1.13.4-4ubuntu0.12.04.2                        OpenJDK Java runtime (architecture independent libraries)
+    ii  openjdk-6-jre-headless              6b33-1.13.5-1ubuntu0.12.04                          OpenJDK Java runtime, using Hotspot JIT (headless)
+    ii  openjdk-6-jre-lib                   6b33-1.13.5-1ubuntu0.12.04                          OpenJDK Java runtime (architecture independent libraries)
     ii  openssh-client                      1:5.9p1-5ubuntu1                                    secure shell (SSH) client, for secure access to remote machines
     ii  openssh-server                      1:5.9p1-5ubuntu1                                    secure shell (SSH) server, for secure access from remote machines
     ii  openssl                             1.0.1-4ubuntu3                                      Secure Socket Layer (SSL) binary and related cryptographic tools
-    ii  oracle-java7-installer              7u60-0~webupd8~0                                    Oracle Java(TM) Development Kit (JDK) 7
+    ii  oracle-java7-installer              7u72+7u60arm-0~webupd8~2                            Oracle Java(TM) Development Kit (JDK) 7
     ii  passwd                              1:4.1.4.2+svn3283-3ubuntu5                          change and administer password and group data
     ii  patch                               2.6.1-3                                             Apply a diff file to an original
     ii  perl                                5.14.2-6ubuntu2                                     Larry Wall's Practical Extraction and Report Language
@@ -997,17 +1035,17 @@ Processor count: 32
     ii  qdbus                               4:4.8.1-0ubuntu4.8                                  Qt 4 D-Bus tool
     ii  qt4-linguist-tools                  4:4.8.1-0ubuntu4.8                                  Qt 4 Linguist tools
     ii  qt4-qmake                           4:4.8.1-0ubuntu4.8                                  Qt 4 qmake Makefile generator tool
-    ii  rabbitmq-server                     3.3.5-1                                             AMQP server written in Erlang
+    ii  rabbitmq-server                     3.4.2-1                                             AMQP server written in Erlang
     ii  ragel                               6.7-1build1                                         compiles finite state machines into code in various languages
     ii  readline-common                     6.2-8                                               GNU readline and history libraries, common files
-    ii  redis-server                        2:2.8.17-rwky1~precise                              Persistent key-value database with network interface
+    ii  redis-server                        2:2.8.18-rwky1~precise                              Persistent key-value database with network interface
     ii  resolvconf                          1.63ubuntu11                                        name server information handler
-    ii  riak                                1.4.10-1                                            Riak is a distributed data store
+    ii  riak                                1.4.12-1                                            Riak is a distributed data store
     ii  rsync                               3.0.9-1ubuntu1                                      fast, versatile, remote (and local) file-copying tool
     ii  rsyslog                             5.8.6-1ubuntu8                                      reliable system and kernel logging daemon
     ii  ruby                                4.8                                                 Transitional package for ruby1.8
     ii  ruby-mysql                          2.8.2+gem2deb-1build1                               MySQL module for Ruby
-    ii  ruby1.8                             1.8.7.352-2ubuntu1.4                                Interpreter of object-oriented scripting language Ruby 1.8
+    ii  ruby1.8                             1.8.7.352-2ubuntu1.6                                Interpreter of object-oriented scripting language Ruby 1.8
     ii  scons                               2.1.0-1                                             replacement for make
     ii  sed                                 4.2.1-9                                             The GNU sed stream editor
     ii  sensible-utils                      0.0.6ubuntu2                                        Utilities for sensible alternative selection
@@ -1018,14 +1056,16 @@ Processor count: 32
     ii  sqlite3-doc                         3.7.9-2ubuntu1.1                                    SQLite 3 documentation
     ii  ssh                                 1:5.9p1-5ubuntu1                                    secure shell client and server (metapackage)
     ii  ssl-cert                            1.0.28ubuntu0.1                                     simple debconf wrapper for OpenSSL
+    ii  strace                              4.5.20-2.3ubuntu1                                   A system call tracer
     ii  subversion                          1.6.17dfsg-3ubuntu3.4                               Advanced version control system
     ii  sudo                                1.8.3p1-1ubuntu3                                    Provide limited super user privileges to specific users
     ii  sysv-rc                             2.88dsf-13.10ubuntu11                               System-V-like runlevel change mechanism
     ii  sysvinit-utils                      2.88dsf-13.10ubuntu11                               System-V-like utilities
     ii  tar                                 1.26-4ubuntu1                                       GNU version of the tar archiving utility
+    ii  telnet                              0.17-36build1                                       The telnet client
     ii  ttf-dejavu-core                     2.33-2ubuntu1                                       Vera font family derivate with additional characters
-    ii  tzdata                              2014e-0ubuntu0.12.04                                time zone and daylight-saving time data
-    ii  tzdata-java                         2014e-0ubuntu0.12.04                                time zone and daylight-saving time data for use by java runtimes
+    ii  tzdata                              2014i-0ubuntu0.12.04                                time zone and daylight-saving time data
+    ii  tzdata-java                         2014i-0ubuntu0.12.04                                time zone and daylight-saving time data for use by java runtimes
     ii  ubuntu-keyring                      2011.11.21                                          GnuPG keys of the Ubuntu archive
     ii  ubuntu-minimal                      1.267                                               Minimal core of Ubuntu
     ii  ucf                                 3.0025+nmu2ubuntu1                                  Update Configuration File: preserve user changes to config files.
