@@ -25,6 +25,7 @@ function _indent {
 
 echo "
 # Machine Info
+Generated at $(date).
 
 ## Hostname
     $(hostname -f)
