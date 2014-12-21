@@ -1,6 +1,6 @@
 language: perl
 perl:
-  - "5.20"
+- '5.20'
 sudo: false
 env:
   global:
@@ -9,6 +9,6 @@ install: []
 script: ./build
 branches:
   include:
-    - master
+  - master
 notifications:
   email: false
