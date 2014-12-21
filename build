@@ -4,7 +4,7 @@ set -e
 ref="$(git describe --all --long HEAD)"
 info="$(./info $ref)"
 
-echo "$out"
+echo "$info"
 
 if [ -n "$TRAVIS_PULL_REQUEST" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   exit 0
@@ -41,7 +41,7 @@ fi
 layout: default
 ---
 
-$out" > "${build_name}/index.md"
+$info" > "${build_name}/index.md"
   git add "${build_name}/index.md"
   git commit -m"System info $host build with $ref"
   git push origin gh-pages
