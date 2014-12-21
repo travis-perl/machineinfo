@@ -1,0 +1,101 @@
+#!/bin/bash
+set -e
+
+if [ "$(type -t perlbrew || true)" != "function" ]; then
+  function perlbrew {
+    if [ -z "$PERLBREW_ROOT" ]; then
+      if [ -e "$HOME/perl5/perlbrew/etc/bashrc" ]; then
+        export PERLBREW_ROOT="$HOME/perl5/perlbrew"
+      fi
+    fi
+    unset -f perlbrew
+    source "$PERLBREW_ROOT/etc/bashrc"
+    perlbrew "$@"
+  }
+fi
+
+sudo=
+if sudo -v 2>/dev/null; then
+  sudo=1
+fi
+
+function _indent {
+  sed -e's/^/    /'
+}
+
+echo "
+# Machine Info
+
+## Hostname
+    $(hostname -f)
+
+## sudo
+$( [ -n "$sudo" ] && echo "Available" || echo "Unavailable" )
+"
+
+[ "$(uname)" == "Darwin" ] && echo "
+## OS X Version
+$(sw_vers | _indent)
+"
+
+[ "$(uname)" == "Linux" ] && echo "
+## Kernel
+$(cat /proc/version | _indent)
+
+## Distro Info
+$([ -e /etc/lsb-release ] && cat /etc/lsb-release | _indent)
+
+$([ -e /etc/debian_version ] && cat /etc/debian_version | _indent)
+"
+
+echo "
+## Free memory
+$( (free -t -m 2>/dev/null || vm_stat ) | _indent)
+
+## Filesystem Info
+$(df -h | _indent)
+
+$(mount | grep '^/' | _indent)
+
+## Network Configuration
+$( (ip addr 2>/dev/null || ifconfig ) | _indent)
+
+## Environment
+$(perl -e'my ($length) = sort { $b <=> $a } map { length } keys %ENV; printf "%${length}s = %s\n", $_, $ENV{$_} for sort keys %ENV' | _indent)
+
+## CPU Info
+
+Processor count: $(
+  if [ -e /proc/cpuinfo ]; then
+    grep -E '^processor\s*:' /proc/cpuinfo | wc -l
+  else
+    sysctl -n hw.ncpu
+  fi
+)
+
+$(
+( [ -e /proc/cpuinfo ] && perl -0777 -p -e 's/\n\n.*/\n/s' /proc/cpuinfo || sysctl -a | grep '^machdep\.cpu\.' ) | _indent
+)
+
+## Processes
+$(ps="$(ps fuxawww 2>/dev/null || ps uxawww)"; echo "$ps" | _indent)
+"
+
+[ -n "$sudo" ] && ( which service &>/dev/null ) && echo "
+## Services
+$(sudo service --status-all 2>&1 | _indent)
+"
+
+echo "
+## Perls
+$(perlbrew list | _indent)
+
+## Packages
+"
+[ "$(uname)" == "Linux" ] && echo "$(dpkg -l | _indent)"
+[ "$(uname)" == "Darwin" ] && echo "$(brew list | _indent)"
+
+[ "$(uname)" == "Darwin" ] && echo "
+## System Profile
+$(system_profiler 2>/dev/null | _indent)
+"
