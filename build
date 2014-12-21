@@ -10,8 +10,15 @@ if [ -n "$TRAVIS_PULL_REQUEST" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   exit 0
 fi
 
+build_name="linux"
+if [ "$(uname)" == "Darwin" ]; then
+  build_name="macosx"
+elif ! sudo -v 2> /dev/null; then
+  build_name="linux-docker"
+fi
+
 current_branch="$(git symbolic-ref --short -q HEAD || echo "$TRAVIS_BRANCH")"
-if [ "$current_branch" != "master" ]; then
+if [ "$current_branch" != "master" ] && [ "$current_branch" != "$build_name" ]; then
   exit 0
 fi
 
@@ -23,13 +30,6 @@ git branch --track gh-pages origin/gh-pages
 git clone --branch gh-pages $(pwd) $outdir
 
 host="$(hostname -f)"
-build_name="linux"
-if [ "$(uname)" == "Darwin" ]; then
-  build_name="macosx"
-elif ! sudo -v 2> /dev/null; then
-  build_name="linux-docker"
-fi
-
 (
   export GIT_AUTHOR_NAME="$(git log -n 1 --format='%an')"
   export GIT_AUTHOR_EMAIL="$(git log -n 1 --format='%ae')"
