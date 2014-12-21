@@ -99,3 +99,5 @@ $(perlbrew list | _indent)
 ## System Profile
 $(system_profiler 2>/dev/null | _indent)
 "
+
+exit 0
