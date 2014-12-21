@@ -4,8 +4,8 @@ layout: default
 
 # Build Environments
 
-## [Linux: Standard]({{ site.url }}/linux/)
+## [Linux: Standard]({{ site.baseurl }}/linux/)
 
-## [Linux: Docker]({{ site.url }}/linux-docker/)
+## [Linux: Docker]({{ site.baseurl }}/linux-docker/)
 
-## [Mac OS X]({{ site.url }}/macosx/)
+## [Mac OS X]({{ site.baseurl }}/macosx/)
