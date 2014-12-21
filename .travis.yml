@@ -2,8 +2,10 @@ language: perl
 perl:
   - "5.20"
 matrix:
-  - sudo: true
-  - sudo: false
+  - perl: "5.20"
+    sudo: true
+  - perl: "5.20"
+    sudo: false
 env:
   global:
     secure: "ETGczm1Bc3FC60I6KAEFqIrbwVn69e+XoqmAhvIF5fPz2vX7N5COWD/ulcewh1E6bko9tJ3aT4Gt3caKDgx4yA0GuSPZ9vls48oKJ8F/hmXG+p1iocn9NwTW7VOqJqsk0SxcJpjbX/UxgXTv02gBco5SXfp5bCb8rHBeMvxFyBA="
