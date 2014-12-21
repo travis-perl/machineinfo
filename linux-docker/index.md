@@ -6,7 +6,7 @@ layout: default
 # Machine Info
 
 ## Hostname
-    testing-worker-linux-docker-9f1a76b0-3327-linux-3.prod.travis-ci.org
+    testing-worker-linux-docker-b91b7796-3316-linux-2.prod.travis-ci.org
 
 ## sudo
 Unavailable
@@ -26,23 +26,23 @@ Unavailable
 
 ## Free memory
                  total       used       free     shared    buffers     cached
-    Mem:         30147       3843      26303          0        341       1287
-    -/+ buffers/cache:       2214      27932
+    Mem:         30147       4602      25544          0        340       1415
+    -/+ buffers/cache:       2846      27300
     Swap:            0          0          0
-    Total:       30147       3843      26303
+    Total:       30147       4602      25544
 
 ## Filesystem Info
-    Filesystem                                                                                         Size  Used Avail Use% Mounted on
-    rootfs                                                                                              16G  6.5G  8.8G  43% /
-    /dev/mapper/docker-202:16-679939-8352313e4b12b03ce037ec218a06d699ca125fb68f1dd18e2288ea837d41ce4a   16G  6.5G  8.8G  43% /
-    shm                                                                                                 64M     0   64M   0% /dev/shm
-    /dev/xvdb                                                                                          151G   74M  143G   1% /etc/resolv.conf
-    /dev/xvdb                                                                                          151G   74M  143G   1% /etc/hostname
-    /dev/xvdb                                                                                          151G   74M  143G   1% /etc/hosts
-    /dev/xvdb                                                                                          151G   74M  143G   1% /.dockerinit
-    /dev/xvdb                                                                                          151G   74M  143G   1% /.dockerenv
+    Filesystem                                                                                          Size  Used Avail Use% Mounted on
+    rootfs                                                                                               16G  6.6G  8.8G  43% /
+    /dev/mapper/docker-202:16-1785859-aa845103c31ed10ce3b772d02c969174a0b90179fd3fcfe99aa43950a9605d99   16G  6.6G  8.8G  43% /
+    shm                                                                                                  64M     0   64M   0% /dev/shm
+    /dev/xvdb                                                                                           151G   74M  143G   1% /etc/resolv.conf
+    /dev/xvdb                                                                                           151G   74M  143G   1% /etc/hostname
+    /dev/xvdb                                                                                           151G   74M  143G   1% /etc/hosts
+    /dev/xvdb                                                                                           151G   74M  143G   1% /.dockerinit
+    /dev/xvdb                                                                                           151G   74M  143G   1% /.dockerenv
 
-    /dev/mapper/docker-202:16-679939-8352313e4b12b03ce037ec218a06d699ca125fb68f1dd18e2288ea837d41ce4a on / type xfs (rw,relatime,nouuid,attr2,discard,inode64,noquota)
+    /dev/mapper/docker-202:16-1785859-aa845103c31ed10ce3b772d02c969174a0b90179fd3fcfe99aa43950a9605d99 on / type xfs (rw,relatime,nouuid,attr2,discard,inode64,sunit=8,swidth=128,noquota)
     /dev/xvdb on /etc/resolv.conf type ext3 (rw,relatime,data=ordered)
     /dev/xvdb on /etc/hostname type ext3 (rw,relatime,data=ordered)
     /dev/xvdb on /etc/hosts type ext3 (rw,relatime,data=ordered)
@@ -56,11 +56,11 @@ Unavailable
            valid_lft forever preferred_lft forever
         inet6 ::1/128 scope host 
            valid_lft forever preferred_lft forever
-    5737: eth0: <BROADCAST,UP,LOWER_UP> mtu 9001 qdisc pfifo_fast state UP qlen 1000
-        link/ether 8e:11:50:ee:3e:c7 brd ff:ff:ff:ff:ff:ff
-        inet 172.17.11.52/16 scope global eth0
+    5901: eth0: <BROADCAST,UP,LOWER_UP> mtu 9001 qdisc pfifo_fast state UP qlen 1000
+        link/ether b2:09:0b:a0:f6:ef brd ff:ff:ff:ff:ff:ff
+        inet 172.17.11.134/16 scope global eth0
            valid_lft forever preferred_lft forever
-        inet6 fe80::8c11:50ff:feee:3ec7/64 scope link 
+        inet6 fe80::b009:bff:fea0:f6ef/64 scope link 
            valid_lft forever preferred_lft forever
 
 ## Environment
@@ -114,20 +114,19 @@ Unavailable
                                RUBY_VERSION = ruby-1.9.3-p551
                                       SHELL = /bin/bash
                                       SHLVL = 5
-                                 SSH_CLIENT = 172.17.42.1 60136 22
-                             SSH_CONNECTION = 172.17.42.1 60136 172.17.11.52 22
-                               SSH_KEY_PASS = 1EEiyqQLMVYshFMj8DygT6ZSdZM2wCnzicJFNhLw
+                                 SSH_CLIENT = 172.17.42.1 45688 22
+                             SSH_CONNECTION = 172.17.42.1 45688 172.17.11.134 22
                                     SSH_TTY = /dev/pts/1
                                        TERM = xterm
                                      TRAVIS = true
                               TRAVIS_BRANCH = master
                            TRAVIS_BUILD_DIR = /home/travis/build/travis-perl/machineinfo
-                            TRAVIS_BUILD_ID = 44716828
-                        TRAVIS_BUILD_NUMBER = 23
-                              TRAVIS_COMMIT = ab8c3d88e749442924c405a545b1d65c64c60613
-                        TRAVIS_COMMIT_RANGE = 3ab1797c05ad...ab8c3d88e749
-                              TRAVIS_JOB_ID = 44716829
-                          TRAVIS_JOB_NUMBER = 23.1
+                            TRAVIS_BUILD_ID = 44717932
+                        TRAVIS_BUILD_NUMBER = 24
+                              TRAVIS_COMMIT = eb6b33af72eb09475ef8fc34bfe8c4026d39d631
+                        TRAVIS_COMMIT_RANGE = ab8c3d88e749...eb6b33af72eb
+                              TRAVIS_JOB_ID = 44717933
+                          TRAVIS_JOB_NUMBER = 24.1
                             TRAVIS_LANGUAGE = perl
                              TRAVIS_OS_NAME = linux
                         TRAVIS_PERL_VERSION = 5.20
@@ -167,8 +166,8 @@ Processor count: 16
     model		: 62
     model name	: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
     stepping	: 4
-    microcode	: 0x416
-    cpu MHz		: 2800.050
+    microcode	: 0x415
+    cpu MHz		: 2793.362
     cache size	: 25600 KB
     physical id	: 0
     siblings	: 16
@@ -181,7 +180,7 @@ Processor count: 16
     cpuid level	: 13
     wp		: yes
     flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
-    bogomips	: 5600.10
+    bogomips	: 5586.72
     clflush size	: 64
     cache_alignment	: 64
     address sizes	: 46 bits physical, 48 bits virtual
@@ -189,23 +188,23 @@ Processor count: 16
 
 ## Processes
     USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root          1  0.2  0.0  23812  1768 ?        Ss   04:26   0:00 /sbin/init
-    root         26  0.0  0.0  50040  2936 ?        Ss   04:26   0:00 /usr/sbin/sshd -D
-    root        227  0.0  0.0  73432  3652 ?        Ss   04:26   0:00  \_ sshd: travis [priv] 
-    travis      231  0.0  0.0  73432  1776 ?        S    04:26   0:00      \_ sshd: travis@pts/1  
-    travis      900  1.5  0.0  15608  4928 pts/1    Ss+  04:26   0:00          \_ bash --login /home/travis/build.sh
-    travis     1543  0.0  0.0  12352  1440 pts/1    S+   04:27   0:00              \_ /bin/bash ./build
-    travis     1544  0.0  0.0  12476  1592 pts/1    S+   04:27   0:00                  \_ /bin/bash ./info
-    travis     1594  0.0  0.0  12476   756 pts/1    S+   04:27   0:00                      \_ /bin/bash ./info
-    travis     1595  0.0  0.0  12476   756 pts/1    S+   04:27   0:00                          \_ /bin/bash ./info
-    travis     1596  0.0  0.0  18132  1164 pts/1    R+   04:27   0:00                              \_ ps fuxawww
-    root         29  0.0  0.0  19116   912 ?        Ss   04:26   0:00 cron
-    mysql        60  0.7  0.3 889320 113548 ?       Ssl  04:26   0:00 /usr/sbin/mysqld
-    postgres    122  2.1  0.0 135464 15020 ?        S    04:26   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
-    postgres    124  0.0  0.0 135464  1776 ?        Ss   04:26   0:00  \_ postgres: writer process                                                                                                      
-    postgres    125  0.0  0.0 135464  1548 ?        Ss   04:26   0:00  \_ postgres: wal writer process                                                                                                  
-    postgres    126  0.0  0.0 136284  2844 ?        Ss   04:26   0:00  \_ postgres: autovacuum launcher process                                                                                         
-    postgres    127  0.0  0.0  96264  1612 ?        Ss   04:26   0:00  \_ postgres: stats collector process                                                                                             
+    root          1  0.3  0.0  23812  1768 ?        Ss   05:00   0:00 /sbin/init
+    root         28  0.0  0.0  50040  2932 ?        Ss   05:00   0:00 /usr/sbin/sshd -D
+    root        227  0.1  0.0  73432  3656 ?        Ss   05:00   0:00  \_ sshd: travis [priv] 
+    travis      231  0.0  0.0  73432  1780 ?        S    05:00   0:00      \_ sshd: travis@pts/1  
+    travis      900  2.1  0.0  15608  4932 pts/1    Ss+  05:00   0:00          \_ bash --login /home/travis/build.sh
+    travis     1543  0.0  0.0  12352  1440 pts/1    S+   05:00   0:00              \_ /bin/bash ./build
+    travis     1544  0.0  0.0  12476  1588 pts/1    S+   05:00   0:00                  \_ /bin/bash ./info
+    travis     1594  0.0  0.0  12476   752 pts/1    S+   05:00   0:00                      \_ /bin/bash ./info
+    travis     1595  0.0  0.0  12476   756 pts/1    S+   05:00   0:00                          \_ /bin/bash ./info
+    travis     1596  0.0  0.0  18132  1164 pts/1    R+   05:00   0:00                              \_ ps fuxawww
+    root         29  0.0  0.0  19116   912 ?        Ss   05:00   0:00 cron
+    mysql        60  1.0  0.3 889320 109480 ?       Ssl  05:00   0:00 /usr/sbin/mysqld
+    postgres    122  2.6  0.0 135464 15024 ?        S    05:00   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+    postgres    124  0.0  0.0 135464  1780 ?        Ss   05:00   0:00  \_ postgres: writer process                                                                                                      
+    postgres    125  0.0  0.0 135464  1552 ?        Ss   05:00   0:00  \_ postgres: wal writer process                                                                                                  
+    postgres    126  0.0  0.0 136284  2848 ?        Ss   05:00   0:00  \_ postgres: autovacuum launcher process                                                                                         
+    postgres    127  0.0  0.0  96264  1616 ?        Ss   05:00   0:00  \_ postgres: stats collector process                                                                                             
 
 
 ## Perls
