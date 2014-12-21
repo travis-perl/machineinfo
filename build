@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-ref="$(git describe --all --long HEAD)"
-info="$(./info $ref)"
-
+info="$(./info)"
 echo "$info"
+
+ref="$(git describe --all --long HEAD)"
 
 if [ -n "$TRAVIS_PULL_REQUEST" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   exit 0
