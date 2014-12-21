@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pass="$(dd if=/dev/urandom bs=1 count=24 2>/dev/null | base64 | tr +/ _-)"
+
+rm -f id_rsa
+rm -f id_rsa.pub
+ssh-keygen -q -b 2048 -t rsa -N $pass -C machineinfo -f id_rsa
+travis encrypt -a -x SSH_KEY_PASS=$pass
+pbcopy < id_rsa.pub
+open https://github.com/travis-perl/machineinfo/settings/keys
