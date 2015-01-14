@@ -1,21 +1,20 @@
 #!/bin/bash
 
-build_name="$(uname | tr A-Z a-z)"
-if [ "$build_name" == "linux" ] && [ "$(sudo -n -v 2>&1)" == "" ]; then
-  build_name="$build_name-docker"
-fi
+master_rev=$(git rev-parse origin/master)
+docker_parent=$(git log -1 --format='%P' origin/linux-docker)
 
-[ "$build_name" == "linux" ] || exit
+[ "$master_rev" == "$docker_parent" ] && exit 0
 
 echo "Triggering rebuild of docker branch..."
 
 rebuild_dir="$(mktemp -d machineinfo-XXXXX)"
-git clone ./ "$rebuild_dir"
+git branch -D linux-docker-rebuild 2>/dev/null
+git branch linux-docker-rebuild origin/master
+git clone --branch linux-docker-rebuild ./ "$rebuild_dir"
 
 (
   cd "$rebuild_dir"
 
-  git checkout -b linux-docker-rebuild
   perl -i -e'while(<>){ if (/^branches:/) { while(<>) { last if /^\S/ } } print unless /^sudo:/ }' .travis.yml
   echo "
   sudo: false
