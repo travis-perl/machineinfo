@@ -5,7 +5,7 @@ tags: machineinfo
 
 
 # Machine Info
-Generated at Wed Jan 14 13:06:20 UTC 2015.
+Generated at Wed Jan 14 13:52:36 UTC 2015.
 
 ## Hostname
     localhost
@@ -15,7 +15,7 @@ Available
 
 
 ## Kernel
-    Linux version 2.6.32-042stab090.5 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Sat Jun 21 00:15:09 MSK 2014
+    Linux version 2.6.32-042stab094.7 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Wed Oct 22 12:43:21 MSK 2014
 
 ## Distro Info
     DISTRIB_ID=Ubuntu
@@ -28,21 +28,21 @@ Available
 
 ## Free memory
                  total       used       free     shared    buffers     cached
-    Mem:          3072        675       2396          0          0          0
-    -/+ buffers/cache:        675       2396
-    Swap:         1536          0       1536
-    Total:        4608        675       3932
+    Mem:          4608        928       3679          0          0        170
+    -/+ buffers/cache:        758       3849
+    Swap:            0          0          0
+    Total:        4608        928       3679
 
 ## Filesystem Info
     Filesystem             Size  Used Avail Use% Mounted on
-    /vz/private/198692290  120G   90G   31G  75% /
-    none                   1.5G  8.0K  1.5G   1% /dev
-    none                   308M   56K  308M   1% /run
+    /vz/private/198696143  721G  168G  518G  25% /
+    none                   2.6G  8.0K  2.6G   1% /dev
+    none                   519M   56K  519M   1% /run
     none                   5.0M   12K  5.0M   1% /run/lock
-    none                   1.5G     0  1.5G   0% /run/shm
+    none                   2.6G     0  2.6G   0% /run/shm
     /dev/null              768M  133M  636M  18% /var/ramfs
 
-    /vz/private/198692290 on / type simfs (rw)
+    /vz/private/198696143 on / type simfs (rw)
     /dev/null on /var/ramfs type tmpfs (rw,noatime,size=768m)
 
 ## Network Configuration
@@ -54,8 +54,8 @@ Available
     2: venet0: <BROADCAST,POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
         link/void 
         inet 127.0.0.2/32 scope host venet0
-        inet 172.30.236.191/32 scope global venet0:0
-        inet6 2607:f700:8001:132:117:3d30:fa10:c4a1/128 scope global 
+        inet 172.30.214.182/32 scope global venet0:0
+        inet6 2607:f700:8001:13f:48b7:1b85:f80c:d1d7/128 scope global 
            valid_lft forever preferred_lft forever
 
 ## Environment
@@ -63,14 +63,15 @@ Available
                     COMPOSER_NO_INTERACTION = 1
                      CONTINUOUS_INTEGRATION = true
                             DEBIAN_FRONTEND = noninteractive
-                          DYLD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                          DYLD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
                                    GEM_HOME = /home/travis/.rvm/gems/ruby-1.9.3-p551
                                    GEM_PATH = /home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global
                                 GIT_ASKPASS = echo
+                                    GIT_SSH = /home/travis/build/travis-perl/machineinfo/ssh-wrapper
                                      GOPATH = /home/travis/.gvm/pkgsets/go1.3.3/global
                                      GOROOT = /home/travis/.gvm/gos/go1.3.3
                          GVM_OVERLAY_PREFIX = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay
-                            GVM_PATH_BACKUP = /home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                            GVM_PATH_BACKUP = /home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
                                    GVM_ROOT = /home/travis/.gvm
                                 GVM_VERSION = 1.0.22
     HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE = true
@@ -82,7 +83,7 @@ Available
                                        LANG = en_US.UTF-8
                                      LC_ALL = en_US.UTF-8
                                    LC_CTYPE = en_US.UTF-8
-                            LD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                            LD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
                                     LOGNAME = travis
                                        MAIL = /var/mail/travis
                                     MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man:/home/travis/.nvm/v0.10.33/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man
@@ -93,7 +94,7 @@ Available
                                     NVM_DIR = /home/travis/.nvm
                       NVM_NODEJS_ORG_MIRROR = https://nodejs.org/dist
                                    NVM_PATH = /home/travis/.nvm/v0.10.33/lib/node
-                                       PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                                       PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
                     PERLBREW_BASHRC_VERSION = 0.71
                               PERLBREW_HOME = /home/travis/.perlbrew
                            PERLBREW_MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man
@@ -101,7 +102,7 @@ Available
                               PERLBREW_PERL = 5.20
                               PERLBREW_ROOT = /home/travis/perl5/perlbrew
                            PERLBREW_VERSION = 0.71
-                            PKG_CONFIG_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:
+                            PKG_CONFIG_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:
                                         PS4 = +
                                         PWD = /home/travis/build/travis-perl/machineinfo
                                    RACK_ENV = test
@@ -109,19 +110,19 @@ Available
                                RUBY_VERSION = ruby-1.9.3-p551
                                       SHELL = /bin/bash
                                       SHLVL = 5
-                                 SSH_CLIENT = 2607:f700:8000:12d:83c4:430f:bcf2:f536 44572 22
-                             SSH_CONNECTION = 2607:f700:8000:12d:83c4:430f:bcf2:f536 44572 2607:f700:8001:132:117:3d30:fa10:c4a1 22
+                                 SSH_CLIENT = 2607:f700:8001:135:8f6:60ad:1673:a829 58511 22
+                             SSH_CONNECTION = 2607:f700:8001:135:8f6:60ad:1673:a829 58511 2607:f700:8001:13f:48b7:1b85:f80c:d1d7 22
                                     SSH_TTY = /dev/pts/0
                                        TERM = xterm
                                      TRAVIS = true
                               TRAVIS_BRANCH = master
                            TRAVIS_BUILD_DIR = /home/travis/build/travis-perl/machineinfo
-                            TRAVIS_BUILD_ID = 46980411
-                        TRAVIS_BUILD_NUMBER = 29
-                              TRAVIS_COMMIT = 16821b452c01c9d9787047e07c20d4243979d543
-                        TRAVIS_COMMIT_RANGE = d22822c4a99e...16821b452c01
-                              TRAVIS_JOB_ID = 46980413
-                          TRAVIS_JOB_NUMBER = 29.1
+                            TRAVIS_BUILD_ID = 46985113
+                        TRAVIS_BUILD_NUMBER = 31
+                              TRAVIS_COMMIT = 6e319f3ac7b8d974b98c27a33ee20f44fb566246
+                        TRAVIS_COMMIT_RANGE = 297edd0d6218...6e319f3ac7b8
+                              TRAVIS_JOB_ID = 46985114
+                          TRAVIS_JOB_NUMBER = 31.1
                             TRAVIS_LANGUAGE = perl
                              TRAVIS_OS_NAME = linux
                         TRAVIS_PERL_VERSION = 5.20
@@ -129,6 +130,7 @@ Available
                            TRAVIS_REPO_SLUG = travis-perl/machineinfo
                      TRAVIS_SECURE_ENV_VARS = true
                                  TRAVIS_TAG = 
+                         TRAVIS_TEST_RESULT = 0
                                        USER = travis
                                           _ = /home/travis/perl5/perlbrew/perls/5.20/bin/perl
                                _system_arch = x86_64
@@ -139,10 +141,17 @@ Available
                             gvm_pkgset_name = global
                         rvm_autoupdate_flag = 0
                                rvm_bin_path = /home/travis/.rvm/bin
+                            rvm_loaded_flag = 1
+                          rvm_max_time_flag = 5
                                    rvm_path = /home/travis/.rvm
                                  rvm_prefix = /home/travis
+                          rvm_project_rvmrc = 0
        rvm_silence_path_mismatch_check_flag = 1
+                           rvm_stored_umask = 0002
+                      rvm_user_install_flag = 1
                                 rvm_version = 1.26.3 (1.26.3)
+                      rvm_with_default_gems = rake=~>10.2.2 bundler=~>1.6.0
+                           rvm_without_gems = rubygems-bundler
 
 ## CPU Info
 
@@ -154,7 +163,7 @@ Processor count: 32
     model		: 2
     model name	: AMD Opteron(tm) Processor 6376                 
     stepping	: 0
-    cpu MHz		: 2299.882
+    cpu MHz		: 2299.901
     cache size	: 2048 KB
     physical id	: 0
     siblings	: 16
@@ -167,7 +176,7 @@ Processor count: 32
     cpuid level	: 13
     wp		: yes
     flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nonstop_tsc extd_apicid amd_dcm aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core arat cpb npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold bmi1
-    bogomips	: 4599.76
+    bogomips	: 4599.80
     TLB size	: 1536 4K pages
     clflush size	: 64
     cache_alignment	: 64
@@ -176,78 +185,77 @@ Processor count: 32
 
 ## Processes
     USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root         1  2.8  0.0  24148  2144 ?        Ss   13:06   0:00 init
-    root         2  0.0  0.0      0     0 ?        S    13:06   0:00 [kthreadd/198692]
-    root         3  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [khelper/1986922]
-    root         4  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root         5  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root         6  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root         7  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root         8  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root         9  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        10  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        11  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        12  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        13  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        14  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        15  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        16  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        17  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        18  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        19  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        20  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        21  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        22  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        23  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        24  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        25  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        26  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        27  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        28  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        29  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        30  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        31  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        32  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        33  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        34  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        35  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [rpciod/19869229]
-    root        36  0.0  0.0      0     0 ?        S    13:06   0:00  \_ [nfsiod/19869229]
-    root       149  0.0  0.0  17180   720 ?        S    13:06   0:00 upstart-udev-bridge --daemon
-    root       154  0.0  0.0  21284  1092 ?        Ss   13:06   0:00 /sbin/udevd --daemon
-    root       196  0.0  0.0  21280   656 ?        S    13:06   0:00  \_ /sbin/udevd --daemon
-    root       198  0.0  0.0  21280   656 ?        S    13:06   0:00  \_ /sbin/udevd --daemon
-    112        185  0.0  0.0  23768   756 ?        Ss   13:06   0:00 dbus-daemon --system --fork --activation=upstart
-    syslog     248  1.5  0.0 177696  1636 ?        Sl   13:06   0:00 rsyslogd -c5
-    root       275  0.0  0.0  15136   548 ?        S    13:06   0:00 upstart-socket-bridge --daemon
-    root       278  0.0  0.0   4344   496 ?        S    13:06   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       286  0.0  0.0   6304   544 ?        S    13:06   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
-    root       290  0.0  0.0  14940  1076 ?        S<   13:06   0:00  \_ /usr/sbin/ntpdate -s ntp.ubuntu.com
-    root       279  0.0  0.0   4348   464 ?        S    13:06   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       283  0.0  0.0   6304   584 ?        S    13:06   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       358  0.0  0.0   4348   464 ?        S    13:06   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       361  0.0  0.0   6304   584 ?        S    13:06   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       391  0.0  0.0  19060   920 ?        Ss   13:06   0:00 cron
-    root       397  0.0  0.0  49980  2920 ?        Ss   13:06   0:00 /usr/sbin/sshd -D
-    root       629  0.6  0.1  73384  3620 ?        Ss   13:06   0:00  \_ sshd: travis [priv] 
-    travis     633  0.0  0.0  73384  1980 ?        S    13:06   0:00      \_ sshd: travis@pts/0  
-    travis    1276 24.0  0.1  15208  4584 pts/0    Ss+  13:06   0:00          \_ /bin/bash /home/travis/build.sh
-    travis    1749  0.0  0.0  12288  1444 pts/0    S+   13:06   0:00              \_ /bin/bash ./build
-    travis    1750  0.0  0.0  12376  1572 pts/0    S+   13:06   0:00                  \_ /bin/bash ./info
-    travis    1801  0.0  0.0  12376   712 pts/0    S+   13:06   0:00                      \_ /bin/bash ./info
-    travis    1802  0.0  0.0  12376   744 pts/0    S+   13:06   0:00                          \_ /bin/bash ./info
-    travis    1803  0.0  0.0  18224  1220 pts/0    R+   13:06   0:00                              \_ ps fuxawww
-    mysql      423  3.2  3.4 908892 107024 ?       Ssl  13:06   0:00 /usr/sbin/mysqld
-    root       463  0.0  0.0  14724  1268 ?        S    13:06   0:00 ping6 -c 1 2607:f700:0:ffff::6
-    root       465  0.0  0.0  14724  1276 ?        S    13:06   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
-    root       467  0.0  0.0  14724  1272 ?        S    13:06   0:00 ping6 -c 1 2607:f700:8000::5
-    root       469  0.0  0.0  14724  1264 ?        S    13:06   0:00 ping6 -c 1 2607:f700:8000::6
-    postgres   489  5.3  0.4 135584 15680 ?        S    13:06   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
-    postgres   491  0.0  0.0 135584  1900 ?        Ss   13:06   0:00  \_ postgres: writer process                                                                                                      
-    postgres   492  0.0  0.0 135584  1808 ?        Ss   13:06   0:00  \_ postgres: wal writer process                                                                                                  
-    postgres   493  0.0  0.0 136456  2996 ?        Ss   13:06   0:00  \_ postgres: autovacuum launcher process                                                                                         
-    postgres   494  0.0  0.0  96384  1760 ?        Ss   13:06   0:00  \_ postgres: stats collector process                                                                                             
-    root       622  1.7  0.0   4344   740 ?        S    13:06   0:00 /bin/sh /etc/init.d/ondemand background
-    root       628  0.0  0.0   4256   536 ?        S    13:06   0:00  \_ sleep 60
+    root         1  1.4  0.0  24148  2104 ?        Ss   13:52   0:00 init
+    root         2  0.0  0.0      0     0 ?        S    13:52   0:00 [kthreadd/198696]
+    root         3  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [khelper/1986961]
+    root         4  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root         5  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root         6  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root         7  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root         8  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root         9  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        10  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        11  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        12  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        13  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        14  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        15  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        16  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        17  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        18  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        19  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        20  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        21  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        22  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        23  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        24  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        25  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        26  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        27  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        28  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        29  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        30  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        31  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        32  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        33  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        34  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        35  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
+    root        36  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [nfsiod/19869614]
+    root       163  0.0  0.0  17180   720 ?        S    13:52   0:00 upstart-udev-bridge --daemon
+    root       171  0.0  0.0  21284  1096 ?        Ss   13:52   0:00 /sbin/udevd --daemon
+    root       211  0.0  0.0  21280   656 ?        S    13:52   0:00  \_ /sbin/udevd --daemon
+    root       213  0.0  0.0  21280   660 ?        S    13:52   0:00  \_ /sbin/udevd --daemon
+    112        188  0.0  0.0  23768   760 ?        Ss   13:52   0:00 dbus-daemon --system --fork --activation=upstart
+    syslog     263  0.1  0.0 177696  1632 ?        Sl   13:52   0:00 rsyslogd -c5
+    root       290  0.0  0.0   4348   500 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       297  0.0  0.0   6304   544 ?        S    13:52   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
+    root       305  0.0  0.0  14940  1076 ?        S<   13:52   0:00  \_ /usr/sbin/ntpdate -s -b ntp.ubuntu.com
+    root       296  0.0  0.0  15136   548 ?        S    13:52   0:00 upstart-socket-bridge --daemon
+    root       299  0.0  0.0   4348   460 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       302  0.0  0.0   6304   584 ?        S    13:52   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       358  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
+    root       363  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2607:f700:8000::5
+    root       365  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2607:f700:8000::6
+    root       375  0.0  0.0   4348   464 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       377  0.0  0.0   6304   580 ?        S    13:52   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       386  0.0  0.0  49980  2916 ?        Ss   13:52   0:00 /usr/sbin/sshd -D
+    root       627  1.0  0.0  73384  3616 ?        Ss   13:52   0:00  \_ sshd: travis [priv] 
+    travis     631  0.0  0.0  73544  1992 ?        S    13:52   0:00      \_ sshd: travis@pts/0  
+    travis    1274 14.5  0.1  15556  4940 pts/0    Ss+  13:52   0:00          \_ bash --login /home/travis/build.sh
+    travis    1922  0.0  0.0  12296  1448 pts/0    S+   13:52   0:00              \_ /bin/bash ./build
+    travis    1923  0.0  0.0  12416  1608 pts/0    S+   13:52   0:00                  \_ /bin/bash ./info
+    travis    1973  0.0  0.0  12416   744 pts/0    S+   13:52   0:00                      \_ /bin/bash ./info
+    travis    1974  0.0  0.0  12416   776 pts/0    S+   13:52   0:00                          \_ /bin/bash ./info
+    travis    1975  0.0  0.0  18224  1220 pts/0    R+   13:52   0:00                              \_ ps fuxawww
+    root       411  0.0  0.0  19060   916 ?        Ss   13:52   0:00 cron
+    mysql      434  3.2  2.1 901596 99728 ?        Ssl  13:52   0:00 /usr/sbin/mysqld
+    postgres   487 11.5  0.3 135580 15680 ?        S    13:52   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+    postgres   493  0.0  0.0 135580  1884 ?        Ss   13:52   0:00  \_ postgres: writer process                                                                                                      
+    postgres   494  0.0  0.0 135580  1804 ?        Ss   13:52   0:00  \_ postgres: wal writer process                                                                                                  
+    postgres   495  0.0  0.0 136452  2992 ?        Ss   13:52   0:00  \_ postgres: autovacuum launcher process                                                                                         
+    postgres   496  0.0  0.0  96380  1756 ?        Ss   13:52   0:00  \_ postgres: stats collector process                                                                                             
+    root       620  0.0  0.0   4348   748 ?        S    13:52   0:00 /bin/sh /etc/init.d/ondemand background
+    root       624  0.0  0.0   4256   536 ?        S    13:52   0:00  \_ sleep 60
 
 
 ## Services
@@ -1106,3 +1114,8 @@ Processor count: 32
     ii  zip                                 3.0-4                                               Archiver for .zip files
     ii  zlib1g                              1:1.2.3.4.dfsg-3ubuntu4                             compression library - runtime
     ii  zlib1g-dev                          1:1.2.3.4.dfsg-3ubuntu4                             compression library - development
+
+## cgroups
+    3:freezer,devices,name=container:/198696143
+    2:cpuacct,cpu,cpuset,name=fairsched:/198696143
+    1:blkio,name=beancounter:/198696143
