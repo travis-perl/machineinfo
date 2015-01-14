@@ -6,7 +6,7 @@ env:
     secure: P2mXaBkjnNd8LIxpKbZAG4mwhBSicBXc2BwXK23dKLNLXFYtxNaJK7jkS1tOhReJUp+UfMrKonWXOEpdzB4Y0RzP5R23U+M9YWOK4NgWEGWTQTpyVue15klgVrgUjESbjGRASXf4k6MhOguKVtsp9JR9OsqjFfv/qHpOGem2wcM=
 install: []
 script:
-  - source ./decrypt
+  - source ./ssh-setup
   - ./build
   - ./rebuild-docker
 branches:

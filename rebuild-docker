@@ -35,4 +35,4 @@ git clone ./ "$rebuild_dir"
 )
 rm -rf "$rebuild_dir"
 
-GIT_SSH=./ssh-wrapper git push -f origin linux-docker-rebuild:linux-docker
+git push -f origin linux-docker-rebuild:linux-docker

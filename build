@@ -46,7 +46,4 @@ $info" > "${build_name}/index.md"
   git push origin gh-pages
 )
 
-git config --replace-all url.git@github.com:.pushInsteadOf git://github.com/ '^git://github\.com/$'
-git config --replace-all url.git@github.com:.pushInsteadOf https://github.com/ '^https://github\.com/$'
-
-GIT_SSH=./ssh-wrapper git push origin gh-pages
+git push origin gh-pages

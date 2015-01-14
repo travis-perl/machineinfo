@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ ! -e id_rsa.dec ]; then
+  cp id_rsa id_rsa.dec
+  chmod 600 id_rsa.dec
+  ssh-keygen -p -f id_rsa.dec -P "$SSH_KEY_PASS" -N '' || rm id_rsa.dec
+fi
+unset SSH_KEY_PASS
+
+git config --replace-all url.git@github.com:.pushInsteadOf git://github.com/ '^git://github\.com/$'
+git config --replace-all url.git@github.com:.pushInsteadOf https://github.com/ '^https://github\.com/$'
+
+export GIT_SSH="$(pwd)/ssh-wrapper"
