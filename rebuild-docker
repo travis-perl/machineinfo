@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if ! git rev-parse --verify -q origin/master >/dev/null; then
+  git remote set-branches origin --add master
+fi
+if ! git rev-parse --verify -q origin/linux-docker >/dev/null; then
+  git remote set-branches origin --add linux-docker
+fi
+git fetch origin
 master_rev=$(git rev-parse origin/master)
 docker_parent=$(git log -1 --format='%P' origin/linux-docker)
 
