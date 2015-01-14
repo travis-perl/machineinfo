@@ -1,13 +1,14 @@
 ---
 layout: default
+tags: machineinfo
 ---
 
 
 # Machine Info
-Generated at Sun Dec 21 05:45:39 UTC 2014.
+Generated at Wed Jan 14 12:37:56 UTC 2015.
 
 ## Hostname
-    testing-worker-linux-docker-ed1975c2-3340-linux-8.prod.travis-ci.org
+    testing-worker-linux-docker-e45833cb-3240-linux-6.prod.travis-ci.org
 
 ## sudo
 Unavailable
@@ -27,15 +28,15 @@ Unavailable
 
 ## Free memory
                  total       used       free     shared    buffers     cached
-    Mem:         30147       4740      25406          0        344       1834
-    -/+ buffers/cache:       2561      27585
+    Mem:         30147       7541      22605          0        390       2906
+    -/+ buffers/cache:       4243      25903
     Swap:            0          0          0
-    Total:       30147       4740      25406
+    Total:       30147       7541      22605
 
 ## Filesystem Info
     Filesystem                                                                                          Size  Used Avail Use% Mounted on
-    rootfs                                                                                               16G  6.5G  8.8G  43% /
-    /dev/mapper/docker-202:16-5578755-90becb6849f7cbabc474fd4b9522d89fe25981f84f6540efa6b73965e68132c8   16G  6.5G  8.8G  43% /
+    rootfs                                                                                               16G  6.6G  8.7G  44% /
+    /dev/mapper/docker-202:16-6856707-d420d177f4f272ee6a3010fc3ca278f9c6c3d0a69cde0e5876b68eff2a733826   16G  6.6G  8.7G  44% /
     shm                                                                                                  64M     0   64M   0% /dev/shm
     /dev/xvdb                                                                                           151G   74M  143G   1% /etc/resolv.conf
     /dev/xvdb                                                                                           151G   74M  143G   1% /etc/hostname
@@ -43,7 +44,7 @@ Unavailable
     /dev/xvdb                                                                                           151G   74M  143G   1% /.dockerinit
     /dev/xvdb                                                                                           151G   74M  143G   1% /.dockerenv
 
-    /dev/mapper/docker-202:16-5578755-90becb6849f7cbabc474fd4b9522d89fe25981f84f6540efa6b73965e68132c8 on / type xfs (rw,relatime,nouuid,attr2,discard,inode64,noquota)
+    /dev/mapper/docker-202:16-6856707-d420d177f4f272ee6a3010fc3ca278f9c6c3d0a69cde0e5876b68eff2a733826 on / type xfs (rw,relatime,nouuid,attr2,discard,inode64,noquota)
     /dev/xvdb on /etc/resolv.conf type ext3 (rw,relatime,data=ordered)
     /dev/xvdb on /etc/hostname type ext3 (rw,relatime,data=ordered)
     /dev/xvdb on /etc/hosts type ext3 (rw,relatime,data=ordered)
@@ -57,11 +58,11 @@ Unavailable
            valid_lft forever preferred_lft forever
         inet6 ::1/128 scope host 
            valid_lft forever preferred_lft forever
-    6009: eth0: <BROADCAST,UP,LOWER_UP> mtu 9001 qdisc pfifo_fast state UP qlen 1000
-        link/ether ce:98:e3:d1:c3:21 brd ff:ff:ff:ff:ff:ff
-        inet 172.17.11.188/16 scope global eth0
+    14851: eth0: <BROADCAST,UP,LOWER_UP> mtu 9001 qdisc pfifo_fast state UP qlen 1000
+        link/ether aa:7e:8a:50:45:b4 brd ff:ff:ff:ff:ff:ff
+        inet 172.17.29.1/16 scope global eth0
            valid_lft forever preferred_lft forever
-        inet6 fe80::cc98:e3ff:fed1:c321/64 scope link 
+        inet6 fe80::a87e:8aff:fe50:45b4/64 scope link 
            valid_lft forever preferred_lft forever
 
 ## Environment
@@ -69,14 +70,14 @@ Unavailable
                     COMPOSER_NO_INTERACTION = 1
                      CONTINUOUS_INTEGRATION = true
                             DEBIAN_FRONTEND = noninteractive
-                          DYLD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                          DYLD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:
                                    GEM_HOME = /home/travis/.rvm/gems/ruby-1.9.3-p551
                                    GEM_PATH = /home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global
                                 GIT_ASKPASS = echo
-                                     GOPATH = /home/travis/.gvm/pkgsets/go1.3.3/global
-                                     GOROOT = /home/travis/.gvm/gos/go1.3.3
-                         GVM_OVERLAY_PREFIX = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay
-                            GVM_PATH_BACKUP = /home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                                     GOPATH = /home/travis/.gvm/pkgsets/go1.4/global
+                                     GOROOT = /home/travis/.gvm/gos/go1.4
+                         GVM_OVERLAY_PREFIX = /home/travis/.gvm/pkgsets/go1.4/global/overlay
+                            GVM_PATH_BACKUP = /home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.4/global/bin:/home/travis/.gvm/gos/go1.4/bin:/home/travis/.gvm/pkgsets/go1.4/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.4/global/bin:/home/travis/.gvm/gos/go1.4/bin:/home/travis/.gvm/pkgsets/go1.4/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
                                    GVM_ROOT = /home/travis/.gvm
                                 GVM_VERSION = 1.0.22
     HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE = true
@@ -88,7 +89,7 @@ Unavailable
                                        LANG = en_US.UTF-8
                                      LC_ALL = en_US.UTF-8
                                    LC_CTYPE = en_US.UTF-8
-                            LD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib:
+                            LD_LIBRARY_PATH = /home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib:
                                     LOGNAME = travis
                                        MAIL = /var/mail/travis
                                     MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man:/home/travis/.nvm/v0.10.33/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man
@@ -99,7 +100,7 @@ Unavailable
                                     NVM_DIR = /home/travis/.nvm
                       NVM_NODEJS_ORG_MIRROR = https://nodejs.org/dist
                                    NVM_PATH = /home/travis/.nvm/v0.10.33/lib/node
-                                       PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/bin:/home/travis/.gvm/gos/go1.3.3/bin:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
+                                       PATH = /home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/5.20/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.33/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.4/global/bin:/home/travis/.gvm/gos/go1.4/bin:/home/travis/.gvm/pkgsets/go1.4/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.4/global/bin:/home/travis/.gvm/gos/go1.4/bin:/home/travis/.gvm/pkgsets/go1.4/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.3/bin:/home/travis/.gvm/pkgsets/go1.4/global/bin:/home/travis/.gvm/gos/go1.4/bin:/home/travis/.gvm/pkgsets/go1.4/global/overlay/bin:/home/travis/.gvm/bin:/home/travis/.gvm/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin
                     PERLBREW_BASHRC_VERSION = 0.71
                               PERLBREW_HOME = /home/travis/.perlbrew
                            PERLBREW_MANPATH = /home/travis/perl5/perlbrew/perls/5.20/man
@@ -107,7 +108,7 @@ Unavailable
                               PERLBREW_PERL = 5.20
                               PERLBREW_ROOT = /home/travis/perl5/perlbrew
                            PERLBREW_VERSION = 0.71
-                            PKG_CONFIG_PATH = /home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.3.3/global/overlay/lib/pkgconfig:
+                            PKG_CONFIG_PATH = /home/travis/.gvm/pkgsets/go1.4/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib/pkgconfig:/home/travis/.gvm/pkgsets/go1.4/global/overlay/lib/pkgconfig:
                                         PS4 = +
                                         PWD = /home/travis/build/travis-perl/machineinfo
                                    RACK_ENV = test
@@ -115,19 +116,19 @@ Unavailable
                                RUBY_VERSION = ruby-1.9.3-p551
                                       SHELL = /bin/bash
                                       SHLVL = 5
-                                 SSH_CLIENT = 172.17.42.1 52456 22
-                             SSH_CONNECTION = 172.17.42.1 52456 172.17.11.188 22
+                                 SSH_CLIENT = 172.17.42.1 54769 22
+                             SSH_CONNECTION = 172.17.42.1 54769 172.17.29.1 22
                                     SSH_TTY = /dev/pts/1
                                        TERM = xterm
                                      TRAVIS = true
                               TRAVIS_BRANCH = linux-docker
                            TRAVIS_BUILD_DIR = /home/travis/build/travis-perl/machineinfo
-                            TRAVIS_BUILD_ID = 44719260
-                        TRAVIS_BUILD_NUMBER = 26
-                              TRAVIS_COMMIT = 87be7b25ae04e20288216d95330d00907a5d6366
-                        TRAVIS_COMMIT_RANGE = 
-                              TRAVIS_JOB_ID = 44719261
-                          TRAVIS_JOB_NUMBER = 26.1
+                            TRAVIS_BUILD_ID = 46977710
+                        TRAVIS_BUILD_NUMBER = 28
+                              TRAVIS_COMMIT = 71523fd91900e0efdecabff739fb03a5397c97af
+                        TRAVIS_COMMIT_RANGE = 87be7b25ae04...71523fd91900
+                              TRAVIS_JOB_ID = 46977711
+                          TRAVIS_JOB_NUMBER = 28.1
                             TRAVIS_LANGUAGE = perl
                              TRAVIS_OS_NAME = linux
                         TRAVIS_PERL_VERSION = 5.20
@@ -141,7 +142,7 @@ Unavailable
                                _system_name = Ubuntu
                                _system_type = Linux
                             _system_version = 12.04
-                                gvm_go_name = go1.3.3
+                                gvm_go_name = go1.4
                             gvm_pkgset_name = global
                         rvm_autoupdate_flag = 0
                                rvm_bin_path = /home/travis/.rvm/bin
@@ -168,7 +169,7 @@ Processor count: 16
     model name	: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
     stepping	: 4
     microcode	: 0x415
-    cpu MHz		: 2800.074
+    cpu MHz		: 2800.086
     cache size	: 25600 KB
     physical id	: 0
     siblings	: 16
@@ -181,7 +182,7 @@ Processor count: 16
     cpuid level	: 13
     wp		: yes
     flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
-    bogomips	: 5600.14
+    bogomips	: 5600.17
     clflush size	: 64
     cache_alignment	: 64
     address sizes	: 46 bits physical, 48 bits virtual
@@ -189,23 +190,23 @@ Processor count: 16
 
 ## Processes
     USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root          1  0.1  0.0  23812  1760 ?        Ss   05:45   0:00 /sbin/init
-    root         24  0.0  0.0  50040  2936 ?        Ss   05:45   0:00 /usr/sbin/sshd -D
-    root        226  0.0  0.0  73432  3656 ?        Ss   05:45   0:00  \_ sshd: travis [priv] 
-    travis      230  0.0  0.0  73432  1780 ?        S    05:45   0:00      \_ sshd: travis@pts/1  
-    travis      899  1.6  0.0  15608  4928 pts/1    Ss+  05:45   0:00          \_ bash --login /home/travis/build.sh
-    travis     1542  0.0  0.0  12352  1436 pts/1    S+   05:45   0:00              \_ /bin/bash ./build
-    travis     1543  0.0  0.0  12476  1592 pts/1    S+   05:45   0:00                  \_ /bin/bash ./info
-    travis     1594  0.0  0.0  12476   752 pts/1    S+   05:45   0:00                      \_ /bin/bash ./info
-    travis     1595  0.0  0.0  12476   756 pts/1    S+   05:45   0:00                          \_ /bin/bash ./info
-    travis     1596  0.0  0.0  18132  1160 pts/1    R+   05:45   0:00                              \_ ps fuxawww
-    root         27  0.0  0.0  19116   908 ?        Ss   05:45   0:00 cron
-    mysql        59  0.8  0.3 889320 109464 ?       Ssl  05:45   0:00 /usr/sbin/mysqld
-    postgres    121  1.8  0.0 135464 15024 ?        S    05:45   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
-    postgres    123  0.0  0.0 135464  1784 ?        Ss   05:45   0:00  \_ postgres: writer process                                                                                                      
-    postgres    124  0.0  0.0 135464  1552 ?        Ss   05:45   0:00  \_ postgres: wal writer process                                                                                                  
-    postgres    125  0.0  0.0 136284  2848 ?        Ss   05:45   0:00  \_ postgres: autovacuum launcher process                                                                                         
-    postgres    126  0.0  0.0  96264  1616 ?        Ss   05:45   0:00  \_ postgres: stats collector process                                                                                             
+    root          1  0.2  0.0  23812  1776 ?        Ss   12:37   0:00 /sbin/init
+    root         25  0.0  0.0  50040  2932 ?        Ss   12:37   0:00 /usr/sbin/sshd -D
+    root        223  0.1  0.0  73432  3652 ?        Ss   12:37   0:00  \_ sshd: travis [priv] 
+    travis      256  0.1  0.0  73432  1776 ?        S    12:37   0:00      \_ sshd: travis@pts/1  
+    travis      899  1.6  0.0  15608  4932 pts/1    Ss+  12:37   0:00          \_ bash --login /home/travis/build.sh
+    travis     1545  0.0  0.0  12352  1432 pts/1    S+   12:37   0:00              \_ /bin/bash ./build
+    travis     1546  0.0  0.0  12476  1588 pts/1    S+   12:37   0:00                  \_ /bin/bash ./info
+    travis     1597  0.0  0.0  12476   748 pts/1    S+   12:37   0:00                      \_ /bin/bash ./info
+    travis     1598  0.0  0.0  12476   748 pts/1    S+   12:37   0:00                          \_ /bin/bash ./info
+    travis     1599  0.0  0.0  18132  1160 pts/1    R+   12:37   0:00                              \_ ps fuxawww
+    root         29  0.0  0.0  19116   912 ?        Ss   12:37   0:00 cron
+    mysql        59  0.9  0.3 889320 113548 ?       Ssl  12:37   0:00 /usr/sbin/mysqld
+    postgres    121  2.0  0.0 135468 15020 ?        S    12:37   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+    postgres    123  0.0  0.0 135468  1776 ?        Ss   12:37   0:00  \_ postgres: writer process                                                                                                      
+    postgres    124  0.0  0.0 135468  1548 ?        Ss   12:37   0:00  \_ postgres: wal writer process                                                                                                  
+    postgres    125  0.0  0.0 136288  2844 ?        Ss   12:37   0:00  \_ postgres: autovacuum launcher process                                                                                         
+    postgres    126  0.0  0.0  96268  1612 ?        Ss   12:37   0:00  \_ postgres: stats collector process                                                                                             
 
 
 ## Perls
@@ -445,12 +446,12 @@ Processor count: 16
     ii  libdjvulibre-text                   3.5.24-9ubuntu0.1                                   Linguistic support files for libdjvulibre
     ii  libdjvulibre21                      3.5.24-9ubuntu0.1                                   Runtime support for the DjVu image format
     ii  libdpkg-perl                        1.16.1.2ubuntu7.5                                   Dpkg perl modules
-    ii  libdrm-dev                          2.4.52-1~precise1                                   Userspace interface to kernel DRM services -- development files
-    ii  libdrm-intel1                       2.4.52-1~precise1                                   Userspace interface to intel-specific kernel DRM services -- runtime
-    ii  libdrm-nouveau1a                    2.4.52-1~precise1                                   Userspace interface to nouveau-specific kernel DRM services -- runtime
-    ii  libdrm-nouveau2                     2.4.52-1~precise1                                   Userspace interface to nouveau-specific kernel DRM services -- runtime
-    ii  libdrm-radeon1                      2.4.52-1~precise1                                   Userspace interface to radeon-specific kernel DRM services -- runtime
-    ii  libdrm2                             2.4.52-1~precise1                                   Userspace interface to kernel DRM services -- runtime
+    ii  libdrm-dev                          2.4.52-1~precise2                                   Userspace interface to kernel DRM services -- development files
+    ii  libdrm-intel1                       2.4.52-1~precise2                                   Userspace interface to intel-specific kernel DRM services -- runtime
+    ii  libdrm-nouveau1a                    2.4.52-1~precise2                                   Userspace interface to nouveau-specific kernel DRM services -- runtime
+    ii  libdrm-nouveau2                     2.4.52-1~precise2                                   Userspace interface to nouveau-specific kernel DRM services -- runtime
+    ii  libdrm-radeon1                      2.4.52-1~precise2                                   Userspace interface to radeon-specific kernel DRM services -- runtime
+    ii  libdrm2                             2.4.52-1~precise2                                   Userspace interface to kernel DRM services -- runtime
     ii  libedit2                            2.11-20080614-3ubuntu2                              BSD editline and history libraries
     ii  libelf1                             0.152-1ubuntu3                                      library to read and write ELF files
     ii  libepsilon0                         0.9.1-2build1                                       A library for wavelet image compression
@@ -644,8 +645,8 @@ Processor count: 16
     ii  libpcsclite1                        1.7.4-2ubuntu2                                      Middleware to access a smart card using PC/SC (library)
     ii  libpgm-5.1-0                        5.1.116~dfsg-2                                      OpenPGM shared library
     ii  libpipeline1                        1.2.1-1                                             pipeline manipulation library
-    ii  libpixman-1-0                       0.30.2-1ubuntu0.0.0.0.1                             pixel-manipulation library for X and cairo
-    ii  libpixman-1-dev                     0.30.2-1ubuntu0.0.0.0.1                             pixel-manipulation library for X and cairo (development files)
+    ii  libpixman-1-0                       0.30.2-1ubuntu0.0.0.0.2                             pixel-manipulation library for X and cairo
+    ii  libpixman-1-dev                     0.30.2-1ubuntu0.0.0.0.2                             pixel-manipulation library for X and cairo (development files)
     ii  libplrpc-perl                       0.2020-2                                            Perl extensions for writing PlRPC servers and clients
     ii  libplymouth2                        0.8.2-2ubuntu31.1                                   graphical boot animation and logger - shared libraries
     ii  libpng12-0                          1.2.46-3ubuntu4                                     PNG library - runtime
@@ -768,13 +769,13 @@ Processor count: 16
     ii  libxerces2-java                     2.11.0-4                                            Validating XML parser for Java with DOM level 3 support
     ii  libxext-dev                         2:1.3.0-3ubuntu0.1                                  X11 miscellaneous extensions library (development headers)
     ii  libxext6                            2:1.3.0-3ubuntu0.1                                  X11 miscellaneous extension library
-    ii  libxfixes-dev                       1:5.0-4ubuntu4.2                                    X11 miscellaneous 'fixes' extension library (development headers)
-    ii  libxfixes3                          1:5.0-4ubuntu4.2                                    X11 miscellaneous 'fixes' extension library
+    ii  libxfixes-dev                       1:5.0-4ubuntu4.3                                    X11 miscellaneous 'fixes' extension library (development headers)
+    ii  libxfixes3                          1:5.0-4ubuntu4.3                                    X11 miscellaneous 'fixes' extension library
     ii  libxfont1                           1:1.4.4-1ubuntu0.2                                  X11 font rasterisation library
     ii  libxft-dev                          2.2.0-3ubuntu2                                      FreeType-based font drawing library for X (development files)
     ii  libxft2                             2.2.0-3ubuntu2                                      FreeType-based font drawing library for X
-    ii  libxi-dev                           2:1.7.1.901-1ubuntu1~precise1                       X11 Input extension library (development headers)
-    ii  libxi6                              2:1.7.1.901-1ubuntu1~precise1                       X11 Input extension library
+    ii  libxi-dev                           2:1.7.1.901-1ubuntu1~precise2                       X11 Input extension library (development headers)
+    ii  libxi6                              2:1.7.1.901-1ubuntu1~precise2                       X11 Input extension library
     ii  libxinerama-dev                     2:1.1.1-3ubuntu0.1                                  X11 Xinerama extension library (development headers)
     ii  libxinerama1                        2:1.1.1-3ubuntu0.1                                  X11 Xinerama extension library
     ii  libxkbfile1                         1:1.0.7-1ubuntu0.1                                  X11 keyboard file manipulation library
@@ -803,7 +804,7 @@ Processor count: 16
     ii  libyaml-0-2                         0.1.4-2ubuntu0.12.04.3                              Fast YAML 1.1 parser and emitter library
     ii  libyaml-dev                         0.1.4-2ubuntu0.12.04.3                              Fast YAML 1.1 parser and emitter library (development)
     ii  libzmq3                             3.2.2+dfsg-1~travis1                                lightweight messaging kernel (shared library)
-    ii  linux-libc-dev                      3.2.0-72.107                                        Linux Kernel Headers for development
+    ii  linux-libc-dev                      3.2.0-74.109                                        Linux Kernel Headers for development
     ii  lksctp-tools                        1.0.11+dfsg-2                                       user-space access to Linux Kernel SCTP - commandline tools
     ii  locales                             2.13+git20120306-3                                  common files for locale support
     ii  login                               1:4.1.4.2+svn3283-3ubuntu5.1                        system login tools
@@ -963,11 +964,11 @@ Processor count: 16
     ii  x11proto-core-dev                   7.0.22-1ubuntu0.1                                   X11 core wire protocol and auxiliary headers
     ii  x11proto-damage-dev                 1:1.2.1-2                                           X11 Damage extension wire protocol
     ii  x11proto-fixes-dev                  1:5.0-2ubuntu1                                      X11 Fixes extension wire protocol
-    ii  x11proto-input-dev                  2.3-1~precise1                                      X11 Input extension wire protocol
+    ii  x11proto-input-dev                  2.3-1~precise2                                      X11 Input extension wire protocol
     ii  x11proto-kb-dev                     1.0.5-2                                             X11 XKB extension wire protocol
     ii  x11proto-randr-dev                  1.4.0+git20120101.is.really.1.4.0-0ubuntu1~precise2 X11 RandR extension wire protocol
     ii  x11proto-render-dev                 2:0.11.1-2                                          X11 Render extension wire protocol
-    ii  x11proto-xext-dev                   7.3.0-1~precise1                                    X11 various extension wire protocol
+    ii  x11proto-xext-dev                   7.3.0-1~precise2                                    X11 various extension wire protocol
     ii  x11proto-xinerama-dev               1.2.1-2                                             X11 Xinerama extension wire protocol
     ii  xauth                               1:1.0.6-1                                           X authentication utility
     ii  xdg-utils                           1.1.0~rc1-2ubuntu6                                  desktop integration utilities from freedesktop.org
@@ -977,10 +978,10 @@ Processor count: 16
     ii  xkb-data                            2.5-1ubuntu1.5                                      X Keyboard Extension (XKB) configuration data
     ii  xml-core                            0.13                                                XML infrastructure and XML catalog file support
     ii  xorg-sgml-doctools                  1:1.10-1                                            Common tools for building X.Org SGML documentation
-    ii  xserver-common                      2:1.11.4-0ubuntu10.14                               common files used by various X servers
-    ii  xserver-xorg-core                   2:1.11.4-0ubuntu10.14                               Xorg X server - core server
+    ii  xserver-common                      2:1.11.4-0ubuntu10.16                               common files used by various X servers
+    ii  xserver-xorg-core                   2:1.11.4-0ubuntu10.16                               Xorg X server - core server
     ii  xtrans-dev                          1.2.6-2                                             X transport library (development files)
-    ii  xvfb                                2:1.11.4-0ubuntu10.14                               Virtual Framebuffer 'fake' X server
+    ii  xvfb                                2:1.11.4-0ubuntu10.16                               Virtual Framebuffer 'fake' X server
     ii  xz-lzma                             5.1.1alpha+20110809-3                               XZ-format compression utilities - compatibility commands
     ii  xz-utils                            5.1.1alpha+20110809-3                               XZ-format compression utilities
     ii  zip                                 3.0-4                                               Archiver for .zip files
