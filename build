@@ -39,6 +39,7 @@ host="$(hostname -f)"
   cd $outdir
   echo "---
 layout: default
+tags: machineinfo
 ---
 
 $info" > "${build_name}/index.md"
