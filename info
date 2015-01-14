@@ -1,6 +1,15 @@
 #!/bin/bash
 set -e
 
+os="$(uname)"
+linux=false
+darwin=false
+if [ "$os" == "Linux" ]; then
+  linux=true
+elif [ "$os" == "Darwin" ]; then
+  darwin=true
+fi
+
 if [ "$(type -t perlbrew || true)" != "function" ]; then
   function perlbrew {
     if [ -z "$PERLBREW_ROOT" ]; then
@@ -34,12 +43,12 @@ Generated at $(date).
 $( [ -n "$sudo" ] && echo "Available" || echo "Unavailable" )
 "
 
-[ "$(uname)" == "Darwin" ] && echo "
+$darwin && echo "
 ## OS X Version
 $(sw_vers | _indent)
 "
 
-[ "$(uname)" == "Linux" ] && echo "
+$linux && echo "
 ## Kernel
 $(cat /proc/version | _indent)
 
@@ -93,10 +102,10 @@ $(perlbrew list | _indent)
 
 ## Packages
 "
-[ "$(uname)" == "Linux" ] && echo "$(dpkg -l | _indent)"
-[ "$(uname)" == "Darwin" ] && echo "$(brew list | _indent)"
+$linux && echo "$(dpkg -l | _indent)"
+$darwin && echo "$(brew list | _indent)"
 
-[ "$(uname)" == "Darwin" ] && echo "
+$darwin && echo "
 ## System Profile
 $(system_profiler 2>/dev/null | _indent)
 "
