@@ -5,7 +5,7 @@ tags: machineinfo
 
 
 # Machine Info
-Generated at Wed Jan 14 13:52:36 UTC 2015.
+Generated at Wed Jan 14 13:53:21 UTC 2015.
 
 ## Hostname
     localhost
@@ -15,7 +15,7 @@ Available
 
 
 ## Kernel
-    Linux version 2.6.32-042stab094.7 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Wed Oct 22 12:43:21 MSK 2014
+    Linux version 2.6.32-042stab090.5 (root@kbuild-rh6-x64) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Sat Jun 21 00:15:09 MSK 2014
 
 ## Distro Info
     DISTRIB_ID=Ubuntu
@@ -28,21 +28,21 @@ Available
 
 ## Free memory
                  total       used       free     shared    buffers     cached
-    Mem:          4608        928       3679          0          0        170
-    -/+ buffers/cache:        758       3849
-    Swap:            0          0          0
-    Total:        4608        928       3679
+    Mem:          3072        676       2395          0          0          0
+    -/+ buffers/cache:        676       2395
+    Swap:         1536          0       1536
+    Total:        4608        676       3931
 
 ## Filesystem Info
     Filesystem             Size  Used Avail Use% Mounted on
-    /vz/private/198696143  721G  168G  518G  25% /
-    none                   2.6G  8.0K  2.6G   1% /dev
-    none                   519M   56K  519M   1% /run
+    /vz/private/198696337  120G   50G   71G  42% /
+    none                   1.5G  8.0K  1.5G   1% /dev
+    none                   308M   56K  308M   1% /run
     none                   5.0M   12K  5.0M   1% /run/lock
-    none                   2.6G     0  2.6G   0% /run/shm
+    none                   1.5G     0  1.5G   0% /run/shm
     /dev/null              768M  133M  636M  18% /var/ramfs
 
-    /vz/private/198696143 on / type simfs (rw)
+    /vz/private/198696337 on / type simfs (rw)
     /dev/null on /var/ramfs type tmpfs (rw,noatime,size=768m)
 
 ## Network Configuration
@@ -54,8 +54,8 @@ Available
     2: venet0: <BROADCAST,POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
         link/void 
         inet 127.0.0.2/32 scope host venet0
-        inet 172.30.214.182/32 scope global venet0:0
-        inet6 2607:f700:8001:13f:48b7:1b85:f80c:d1d7/128 scope global 
+        inet 172.30.124.72/32 scope global venet0:0
+        inet6 2607:f700:8001:135:574b:bfb4:420d:79b1/128 scope global 
            valid_lft forever preferred_lft forever
 
 ## Environment
@@ -110,19 +110,19 @@ Available
                                RUBY_VERSION = ruby-1.9.3-p551
                                       SHELL = /bin/bash
                                       SHLVL = 5
-                                 SSH_CLIENT = 2607:f700:8001:135:8f6:60ad:1673:a829 58511 22
-                             SSH_CONNECTION = 2607:f700:8001:135:8f6:60ad:1673:a829 58511 2607:f700:8001:13f:48b7:1b85:f80c:d1d7 22
+                                 SSH_CLIENT = 2607:f700:8001:135:2d88:5f39:701d:4ea2 52636 22
+                             SSH_CONNECTION = 2607:f700:8001:135:2d88:5f39:701d:4ea2 52636 2607:f700:8001:135:574b:bfb4:420d:79b1 22
                                     SSH_TTY = /dev/pts/0
                                        TERM = xterm
                                      TRAVIS = true
-                              TRAVIS_BRANCH = master
+                              TRAVIS_BRANCH = linux-docker
                            TRAVIS_BUILD_DIR = /home/travis/build/travis-perl/machineinfo
-                            TRAVIS_BUILD_ID = 46985113
-                        TRAVIS_BUILD_NUMBER = 31
-                              TRAVIS_COMMIT = 6e319f3ac7b8d974b98c27a33ee20f44fb566246
-                        TRAVIS_COMMIT_RANGE = 297edd0d6218...6e319f3ac7b8
-                              TRAVIS_JOB_ID = 46985114
-                          TRAVIS_JOB_NUMBER = 31.1
+                            TRAVIS_BUILD_ID = 46985525
+                        TRAVIS_BUILD_NUMBER = 32
+                              TRAVIS_COMMIT = 4766e9e2c78d844757b86411e0bd818faa0f8815
+                        TRAVIS_COMMIT_RANGE = 71523fd91900...4766e9e2c78d
+                              TRAVIS_JOB_ID = 46985526
+                          TRAVIS_JOB_NUMBER = 32.1
                             TRAVIS_LANGUAGE = perl
                              TRAVIS_OS_NAME = linux
                         TRAVIS_PERL_VERSION = 5.20
@@ -163,7 +163,7 @@ Processor count: 32
     model		: 2
     model name	: AMD Opteron(tm) Processor 6376                 
     stepping	: 0
-    cpu MHz		: 2299.901
+    cpu MHz		: 2300.069
     cache size	: 2048 KB
     physical id	: 0
     siblings	: 16
@@ -176,7 +176,7 @@ Processor count: 32
     cpuid level	: 13
     wp		: yes
     flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nonstop_tsc extd_apicid amd_dcm aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core arat cpb npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold bmi1
-    bogomips	: 4599.80
+    bogomips	: 4600.13
     TLB size	: 1536 4K pages
     clflush size	: 64
     cache_alignment	: 64
@@ -185,77 +185,79 @@ Processor count: 32
 
 ## Processes
     USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root         1  1.4  0.0  24148  2104 ?        Ss   13:52   0:00 init
-    root         2  0.0  0.0      0     0 ?        S    13:52   0:00 [kthreadd/198696]
-    root         3  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [khelper/1986961]
-    root         4  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root         5  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root         6  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root         7  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root         8  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root         9  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        10  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        11  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        12  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        13  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        14  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        15  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        16  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        17  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        18  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        19  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        20  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        21  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        22  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        23  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        24  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        25  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        26  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        27  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        28  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        29  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        30  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        31  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        32  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        33  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        34  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        35  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [rpciod/19869614]
-    root        36  0.0  0.0      0     0 ?        S    13:52   0:00  \_ [nfsiod/19869614]
-    root       163  0.0  0.0  17180   720 ?        S    13:52   0:00 upstart-udev-bridge --daemon
-    root       171  0.0  0.0  21284  1096 ?        Ss   13:52   0:00 /sbin/udevd --daemon
-    root       211  0.0  0.0  21280   656 ?        S    13:52   0:00  \_ /sbin/udevd --daemon
-    root       213  0.0  0.0  21280   660 ?        S    13:52   0:00  \_ /sbin/udevd --daemon
-    112        188  0.0  0.0  23768   760 ?        Ss   13:52   0:00 dbus-daemon --system --fork --activation=upstart
-    syslog     263  0.1  0.0 177696  1632 ?        Sl   13:52   0:00 rsyslogd -c5
-    root       290  0.0  0.0   4348   500 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       297  0.0  0.0   6304   544 ?        S    13:52   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
-    root       305  0.0  0.0  14940  1076 ?        S<   13:52   0:00  \_ /usr/sbin/ntpdate -s -b ntp.ubuntu.com
-    root       296  0.0  0.0  15136   548 ?        S    13:52   0:00 upstart-socket-bridge --daemon
-    root       299  0.0  0.0   4348   460 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       302  0.0  0.0   6304   584 ?        S    13:52   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       358  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
-    root       363  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2607:f700:8000::5
-    root       365  0.0  0.0  14724  1272 ?        S    13:52   0:00 ping6 -c 1 2607:f700:8000::6
-    root       375  0.0  0.0   4348   464 ?        S    13:52   0:00 /bin/sh /etc/network/if-up.d/ntpdate
-    root       377  0.0  0.0   6304   580 ?        S    13:52   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
-    root       386  0.0  0.0  49980  2916 ?        Ss   13:52   0:00 /usr/sbin/sshd -D
-    root       627  1.0  0.0  73384  3616 ?        Ss   13:52   0:00  \_ sshd: travis [priv] 
-    travis     631  0.0  0.0  73544  1992 ?        S    13:52   0:00      \_ sshd: travis@pts/0  
-    travis    1274 14.5  0.1  15556  4940 pts/0    Ss+  13:52   0:00          \_ bash --login /home/travis/build.sh
-    travis    1922  0.0  0.0  12296  1448 pts/0    S+   13:52   0:00              \_ /bin/bash ./build
-    travis    1923  0.0  0.0  12416  1608 pts/0    S+   13:52   0:00                  \_ /bin/bash ./info
-    travis    1973  0.0  0.0  12416   744 pts/0    S+   13:52   0:00                      \_ /bin/bash ./info
-    travis    1974  0.0  0.0  12416   776 pts/0    S+   13:52   0:00                          \_ /bin/bash ./info
-    travis    1975  0.0  0.0  18224  1220 pts/0    R+   13:52   0:00                              \_ ps fuxawww
-    root       411  0.0  0.0  19060   916 ?        Ss   13:52   0:00 cron
-    mysql      434  3.2  2.1 901596 99728 ?        Ssl  13:52   0:00 /usr/sbin/mysqld
-    postgres   487 11.5  0.3 135580 15680 ?        S    13:52   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
-    postgres   493  0.0  0.0 135580  1884 ?        Ss   13:52   0:00  \_ postgres: writer process                                                                                                      
-    postgres   494  0.0  0.0 135580  1804 ?        Ss   13:52   0:00  \_ postgres: wal writer process                                                                                                  
-    postgres   495  0.0  0.0 136452  2992 ?        Ss   13:52   0:00  \_ postgres: autovacuum launcher process                                                                                         
-    postgres   496  0.0  0.0  96380  1756 ?        Ss   13:52   0:00  \_ postgres: stats collector process                                                                                             
-    root       620  0.0  0.0   4348   748 ?        S    13:52   0:00 /bin/sh /etc/init.d/ondemand background
-    root       624  0.0  0.0   4256   536 ?        S    13:52   0:00  \_ sleep 60
+    root         1  3.0  0.0  24148  2104 ?        Ss   13:53   0:00 init
+    root         2  0.0  0.0      0     0 ?        S    13:53   0:00 [kthreadd/198696]
+    root         3  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [khelper/1986963]
+    root         4  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root         5  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root         6  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root         7  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root         8  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root         9  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        10  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        11  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        12  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        13  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        14  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        15  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        16  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        17  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        18  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        19  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        20  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        21  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        22  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        23  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        24  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        25  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        26  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        27  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        28  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        29  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        30  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        31  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        32  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        33  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        34  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        35  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [rpciod/19869633]
+    root        36  0.0  0.0      0     0 ?        S    13:53   0:00  \_ [nfsiod/19869633]
+    root       149  0.0  0.0  17180   724 ?        S    13:53   0:00 upstart-udev-bridge --daemon
+    root       154  0.0  0.0  21284  1092 ?        Ss   13:53   0:00 /sbin/udevd --daemon
+    root       196  0.0  0.0  21280   656 ?        S    13:53   0:00  \_ /sbin/udevd --daemon
+    root       199  0.0  0.0  21280   656 ?        S    13:53   0:00  \_ /sbin/udevd --daemon
+    112        184  0.0  0.0  23768   752 ?        Ss   13:53   0:00 dbus-daemon --system --fork --activation=upstart
+    syslog     211  1.3  0.0 177696  1636 ?        Sl   13:53   0:00 rsyslogd -c5
+    root       274  0.0  0.0   4348   500 ?        S    13:53   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       284  0.0  0.0   6304   536 ?        S    13:53   0:00  \_ lockfile-touch /var/lock/ntpdate-ifup
+    root       288  0.0  0.0  14940  1076 ?        S<   13:53   0:00  \_ /usr/sbin/ntpdate -s -b ntp.ubuntu.com
+    root       278  0.0  0.0   4348   464 ?        S    13:53   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       281  0.0  0.0   6304   584 ?        S    13:53   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       279  0.0  0.0  15136   548 ?        S    13:53   0:00 upstart-socket-bridge --daemon
+    root       349  0.0  0.0   4348   460 ?        S    13:53   0:00 /bin/sh /etc/network/if-up.d/ntpdate
+    root       351  0.0  0.0   6304   588 ?        S    13:53   0:00  \_ lockfile-create /var/lock/ntpdate-ifup
+    root       378  0.0  0.0  19060   916 ?        Ss   13:53   0:00 cron
+    root       395  0.0  0.0  49980  2920 ?        Ss   13:53   0:00 /usr/sbin/sshd -D
+    root       626  0.3  0.1  73388  3616 ?        Ss   13:53   0:00  \_ sshd: travis [priv] 
+    travis     630  0.0  0.0  73520  1992 ?        S    13:53   0:00      \_ sshd: travis@pts/0  
+    travis    1273 13.5  0.1  15556  4936 pts/0    Ss+  13:53   0:00          \_ bash --login /home/travis/build.sh
+    travis    1921  0.0  0.0  12296  1448 pts/0    S+   13:53   0:00              \_ /bin/bash ./build
+    travis    1922  0.0  0.0  12416  1612 pts/0    S+   13:53   0:00                  \_ /bin/bash ./info
+    travis    1972  0.0  0.0  12416   744 pts/0    S+   13:53   0:00                      \_ /bin/bash ./info
+    travis    1973  0.0  0.0  12416   776 pts/0    S+   13:53   0:00                          \_ /bin/bash ./info
+    travis    1974  0.0  0.0  18224  1220 pts/0    R+   13:53   0:00                              \_ ps fuxawww
+    mysql      418  2.8  3.4 908892 107016 ?       Ssl  13:53   0:00 /usr/sbin/mysqld
+    root       471  0.0  0.0  14724  1272 ?        S    13:53   0:00 ping6 -c 1 2607:f700:0:ffff::5
+    root       473  0.0  0.0  14724  1272 ?        S    13:53   0:00 ping6 -c 1 2607:f700:0:ffff::6
+    root       475  0.0  0.0  14724  1272 ?        S    13:53   0:00 ping6 -c 1 2a04:1b80:0:ffff::1
+    root       477  0.0  0.0  14724  1272 ?        S    13:53   0:00 ping6 -c 1 2607:f700:8000::5
+    root       479  0.0  0.0  14724  1272 ?        S    13:53   0:00 ping6 -c 1 2607:f700:8000::6
+    postgres   486  6.0  0.4 135580 15680 ?        S    13:53   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/ramfs/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+    postgres   488  0.0  0.0 135580  1892 ?        Ss   13:53   0:00  \_ postgres: writer process                                                                                                      
+    postgres   489  0.0  0.0 135580  1804 ?        Ss   13:53   0:00  \_ postgres: wal writer process                                                                                                  
+    postgres   490  0.0  0.0 136452  2992 ?        Ss   13:53   0:00  \_ postgres: autovacuum launcher process                                                                                         
+    postgres   491  0.0  0.0  96380  1756 ?        Ss   13:53   0:00  \_ postgres: stats collector process                                                                                             
+    root       619  2.0  0.0   4348   752 ?        S    13:53   0:00 /bin/sh /etc/init.d/ondemand background
+    root       625  0.0  0.0   4256   532 ?        S    13:53   0:00  \_ sleep 60
 
 
 ## Services
@@ -1116,6 +1118,6 @@ Processor count: 32
     ii  zlib1g-dev                          1:1.2.3.4.dfsg-3ubuntu4                             compression library - development
 
 ## cgroups
-    3:freezer,devices,name=container:/198696143
-    2:cpuacct,cpu,cpuset,name=fairsched:/198696143
-    1:blkio,name=beancounter:/198696143
+    3:freezer,devices,name=container:/198696337
+    2:cpuacct,cpu,cpuset,name=fairsched:/198696337
+    1:blkio,name=beancounter:/198696337
