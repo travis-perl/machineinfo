@@ -105,6 +105,11 @@ $(perlbrew list | _indent)
 $linux && echo "$(dpkg -l | _indent)"
 $darwin && echo "$(brew list | _indent)"
 
+[ -e /proc/1/cgroup ] && echo "
+## cgroups
+$(cat /proc/1/cgroup | _indent)
+"
+
 $darwin && echo "
 ## System Profile
 $(system_profiler 2>/dev/null | _indent)
