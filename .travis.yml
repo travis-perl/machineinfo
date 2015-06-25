@@ -9,8 +9,11 @@ script:
   - source ./ssh-setup
   - ./build
   - ./rebuild-docker
-branches:
-  include:
-  - master
 notifications:
   email: false
+
+  sudo: false
+  branches:
+  include:
+  - linux-docker
+  
